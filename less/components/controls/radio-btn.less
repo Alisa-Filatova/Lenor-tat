@@ -1,0 +1,46 @@
+@import '../../variables';
+
+.radio-btn {
+    display: none;
+
+    & + label span {
+        width: 40px;
+        height: 40px;
+        border: 2px solid @black;
+        background-color: @white;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+
+        &:hover {
+            border: 2px solid @orange;
+            transition: 0.3s;
+        }
+
+        &:active {
+            border: 2px solid @pink;
+        }
+    }
+
+    &:checked + label span::after {
+        position: absolute;
+        top: 12px;
+        left: 11px;
+        width: 18px;
+        height: 18px;
+        content: '';
+        background: @orange;
+        border-radius: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+

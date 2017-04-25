@@ -1,0 +1,30 @@
+@import '../../variables';
+
+.btn {
+    text-decoration: none;
+    border: none;
+    border: 3px solid @orange;
+    font-family: @font-family_base;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 2px;
+    color: @orange_dark;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    padding-top: 7px;
+    line-height: 26px;
+    cursor: pointer;
+
+
+    &:hover {
+        background-color: @orange;
+        color: @white;
+        transition: 0.3s;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+
+}

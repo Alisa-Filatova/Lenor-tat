@@ -1,0 +1,60 @@
+@import '../../variables';
+
+
+.close-btn {
+    border: none;
+    width: 58px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    right: 31px;
+    top: 29px;
+    z-index: 1000;
+    display: none;
+    outline: none;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 5px;
+        background-color: @orange;
+        position: absolute;
+        top: 9px;
+        left: 2px;
+        transform: rotate(41deg);
+
+        @media(max-width: @screen_mobile) {
+            width: 25px;
+            height: 3px;
+        }
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 5px;
+        background-color: @orange;
+        position: absolute;
+        top: 9px;
+        left: 2px;
+        transform: rotate(137deg);
+
+        @media(max-width: @screen_mobile) {
+            width: 25px;
+            height: 3px;
+        }
+    }
+
+    @media(max-width: @screen_tablet) {
+        display: block;
+    }
+
+    @media(max-width: @screen_mobile) {
+        top: 18px;
+        right: 35px;
+        width: 25px;
+        height: 25px;
+    }
+}

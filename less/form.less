@@ -1,0 +1,372 @@
+@import 'fonts';
+@import 'mixins';
+@import 'variables';
+@import 'common';
+@import 'components/controls/btn';
+@import 'components/controls/base-link';
+@import 'components/base';
+@import 'components/controls/checkbox';
+@import 'components/controls/radio-btn';
+@import 'components/controls/input-text';
+
+.appointment-form {
+    .container ();
+    background-color: @white;
+    background-image: url('../img/header-orange-rotate.min.svg'), url('../img/footer-black-rotate.min.svg');
+    background-position: center top, center bottom;
+    background-repeat: no-repeat;
+    background-size: 101%;
+    padding-top: 120px;
+    padding-bottom: 205px;
+}
+
+@media(max-width:@screen_tablet) {
+
+    .appointment-form {
+        background-position: center top, center 101%;
+        padding-top: 72px;
+        padding-bottom: 188px;
+    }
+}
+
+@media(max-width:@screen_mobile) {
+
+    .appointment-form {
+        padding-bottom: 60px;
+        background-position: center top, center 100%;
+    }
+}
+
+.form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+
+    &__title {
+        font-size: 35px;
+        line-height: 45px;
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        width: 825px;
+
+        &_contacts,
+        &_master,
+        &_service {
+            flex-flow: column wrap;
+            max-width: 248px;
+        }
+
+        &_hair-length,
+        &_additional-services {
+            text-align: center;
+            justify-content: space-around;
+        }
+    }
+
+    &__list-item {
+
+        &_name {
+            display: flex;
+            flex-flow: column wrap;
+            flex-basis: 285px;
+        }
+    }
+
+    &__radio-btn,
+    &__checkbox {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    &__radio-btn_master,
+    &__checkbox_service {
+        margin-right: 10px;
+    }
+
+    &__legend {
+        font-size: 21px;
+        line-height: 31px;
+        font-weight: 500;
+
+        &_hair-length,
+        &_additional-services,
+        &_add-info {
+            text-align: center;
+            padding: 20px;
+            margin: 0 auto;
+        }
+    }
+
+    &__label {
+        font-size: 16px;
+        line-height: 21px;
+        cursor: pointer;
+
+        &_hair-length,
+        &_additional-services {
+           display: flex;
+           flex-flow: column wrap;
+           align-items: center;
+        }
+    }
+
+    &__input {
+        &_phone {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__btn-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-basis: 824px;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 235px;
+            height: 130px;
+            background-image: url('../img/scissors-big.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 90%;
+            position: absolute;
+            right: -113px;
+            bottom: -147px;
+
+            @media(max-width:@screen_tablet) {
+                right: -37px;
+                width: 188px;
+                height: 102px;
+            }
+
+            @media(max-width:@screen_mobile) {
+                display: none;
+            }
+        }
+    }
+
+    &__textarea {
+        width: 778px;
+        height: 80px;
+    }
+
+    &__fieldset {
+        border: none;
+
+        &_hair-length,
+        &_additional-services,
+        &_add-info {
+            border-top: 1px solid @black;
+        }
+
+        &_master {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    &__hair-icon {
+        width: 76px;
+        height: 121px;
+        background-repeat: no-repeat;
+        background-position: top;
+
+
+        &_long {
+            background-image: url('../img/hair-long.svg');
+            background-size: cover;
+        }
+
+        &_middle {
+           background-image: url('../img/hair-middle.svg');
+            background-size: 95%;
+        }
+
+        &_short {
+            background-image: url('../img/hair-short.svg');
+            background-size: 75%;
+        }
+
+        &_shortest {
+            background-image: url('../img/hair-shortest.svg');
+            background-size: 70%;
+        }
+    }
+
+    &__correction {
+        font-size: 14px;
+
+        &_symbol {
+            color: @orange;
+        }
+    }
+}
+
+@media(max-width:@screen_tablet) {
+    .form {
+        &__list {
+
+            &_name {
+                width: 740px;
+            }
+
+            &_contacts,
+            &_master,
+            &_service {
+                max-width: 220px;
+                align-items: flex-start;
+            }
+        }
+
+        &__textarea {
+            width: 726px;
+        }
+
+        &__input {
+            width: 190px;
+        }
+
+        &__fieldset_master {
+            margin-right: 0;
+            margin-left: 36px;
+        }
+
+    }
+}
+
+@media(max-width:@screen_mobile) {
+
+    .form {
+
+        &__textarea {
+            width: 332px;
+        }
+
+        &__btn-wrapper {
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        &__fieldset {
+            border: none;
+
+            &_master {
+                margin-left: -5px;
+            }
+        }
+
+        &__list {
+            flex-flow: column;
+            align-items: center;
+            width: 400px;
+            text-align: center;
+
+            &_contacts {
+                max-width: 256px;
+            }
+
+            &_name {
+                flex-flow: row wrap;
+                justify-content: center;
+            }
+        }
+
+        &__title {
+            text-align: center;
+            font-weight: 600;
+        }
+
+        &__input {
+            margin-top: 5px;
+            width: 300px;
+            font-size: 21px;
+
+            &_phone {
+                margin-bottom: 0;
+            }
+        }
+
+        &__list {
+
+            &_master,
+            &_service {
+                align-items: flex-start;
+                text-align: left;
+                max-width: 280px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            &_hair-length,
+            &_additional-services {
+                flex-flow: column wrap;
+                width: 250px;
+                margin: 0 18px;
+                align-items: flex-start;
+            }
+
+            &_additional-services {
+                margin: 0 38px;
+            }
+        }
+
+        &__label {
+            font-size: 23px;
+
+            &_hair-length,
+            &_additional-services {
+                flex-flow: row wrap;
+            }
+        }
+
+        &__hair-icon {
+            display: none;
+        }
+
+        &__legend {
+            font-size: 25px;
+            font-weight: 600;
+
+            &_add-info {
+                font-size: 21px;
+            }
+        }
+
+        &__list-item {
+            margin-bottom: 15px;
+        }
+
+        &__checkbox,
+        &__radio-btn {
+            margin-right: 15px;
+        }
+
+        &__btn {
+            padding: 5px 92px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

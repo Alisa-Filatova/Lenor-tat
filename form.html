@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Lenor TAT</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="keywords" content="парикмахер, стилист, стрижка, окрашивание, имидж, прическа, ателье, театральный костюм, Тата Курина, Татьяна Ленорман">
+    <meta name="description" content="Имидж-студия Таты Куриной и Татьяны Ленорман - Запись">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <link rel="icon" type="image/png" href="favicon.png"/>
+</head>
+<body>
+
+    <header class="page-header">
+      
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="index.html#">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="index.html#">Имидж-студия</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="index.html">Ателье</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="index.html">О нас</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="gallery.html">Наши работы</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="index.html#">Цены</a>
+                </li>
+                 <li class="main-nav__item">
+                    <a class="main-nav__link" href="form.html#">Записаться</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="index.html#">Отзывы</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="index.html#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="close-btn main-nav__close-btn" type="button"></button>
+        <button class="menu-open main-nav__menu-open" type="button"></button>
+    </header>
+
+    <section class="promo promo_inner" id="promo">
+        <div class="promo__wrapper">
+            <div class="logo promo__logo promo__logo_inner"></div>
+        </div>
+    </section>
+    
+    <section class="appointment-form">
+        <form class="form" method="post" action="url" name="appointment-form">
+            
+            <fieldset class="form__fieldset form__fieldset_name">
+                <h1 class="form__title">Запись к мастеру</h1>
+                
+                <ul class="form__list form__list_name">
+
+                    <li class="form__list-item form__list-item_name">
+                        <label 
+                            class="form__label form__label_name" 
+                            for="name"
+                        >
+                            Имя<sup>*</sup>
+                        </label>
+                        
+                        <input
+                            class="input-text form__input form__input_name" 
+                            type="text" 
+                            name="name" 
+                            id="name" 
+                            placeholder="Ваше имя*" 
+                            required
+                            autofocus
+                        >
+                    </li>
+                    
+                    <li class="form__list-item form__list-item_name">
+                        <label 
+                            class="form__label form__label_name" 
+                            for="surname"
+                        >
+                            Фамилия
+                        </label>
+                        
+                        <input 
+                            class="input-text form__input form__input_name" 
+                            type="text" 
+                            name="surname" 
+                            id="surname" 
+                            placeholder="Ваша фамилия"
+                        >
+                    </li>
+                    
+                    <li class="form__list-item form__list-item_name">
+                
+                        <label 
+                            class="form__label form__label_name" 
+                            for="middle-name"
+                        >
+                            Отчество
+                        </label>
+                        
+                        <input
+                            class="input-text form__input form__input_name" 
+                            type="text" 
+                            name="middle-name" 
+                            id="middle-name" 
+                            placeholder="Ваше отчество"
+                        >
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="form__fieldset form__fieldset_contacts">
+                
+                <legend class="form__legend">
+                    Контакты для связи
+                </legend>
+                
+                <ul class="form__list form__list_contacts">
+                    <li class="form__list-item form__list-item_contacts">
+                        <label 
+                            class="form__label form__label_contacts" 
+                            for="phone-number">
+                            Телефон<sup>*</sup>
+                        </label>
+                        <input
+                            class="input-text form__input form__input_phone" 
+                            type="tel" 
+                            name="phone" 
+                            id="phone-number" 
+                            placeholder="Ваш телефон"
+                            required
+                        >
+                    </li>
+                
+                    <li class="form__list-item form__list-item_contacts">
+                        <label 
+                            class="form__label form__label_contacts" 
+                            for="e-mail">
+                            E-mail
+                        </label>
+                        <input 
+                            class="input-text form__input form__input_e-mail" 
+                            type="email" 
+                            name="e-mail" 
+                            id="e-mail" 
+                            placeholder="Ваша почта" 
+                        >
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="form__fieldset form__fieldset_master">
+                <legend class="form__legend form__legend_master">
+                    Выберите мастера
+                </legend>
+                
+                <ul class="form__list form__list_master">
+                    <li class="form__list-item">
+                        <input 
+                            class="radio-btn" 
+                            type="radio" 
+                            name="master" 
+                            id="tata"
+                            checked
+                        >
+                        <label class="form__label form__label_master" for="tata">
+                            <span class="form__radio-btn form__radio-btn_master"></span>
+                            Тата Курина
+                        </label>
+                    </li>
+                    <li class="form__list-item">
+                        <input 
+                            class="radio-btn" 
+                            type="radio" 
+                            name="master" 
+                            id="lenorman"
+                        >
+                        <label class="form__label form__label_master" for="lenorman">
+                            <span class="form__radio-btn form__radio-btn_master"></span>
+                            Татьяна Ленорман
+                        </label>
+                    </li>
+                    <li class="form__list-item">
+                        <input 
+                            class="radio-btn" 
+                            type="radio" 
+                            name="master" 
+                            id="nevermind"
+                        >
+                        <label class="form__label form__label_master" for="nevermind">
+                            <span class="form__radio-btn form__radio-btn_master"></span>
+                            Любой
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="form__fieldset form__fieldset_service">
+                <legend class="form__legend">
+                    Что делаем?
+                </legend>
+                <ul class="form__list form__list_service">
+                        
+                    <li class="form__list-item"> 
+                        <input
+                            class="checkbox"
+                            type="checkbox" 
+                            name="service" 
+                            value="Стрижка" 
+                            id="haircut" 
+                            checked
+                        >
+                        <label 
+                            class="form__label form__label_service" 
+                            for="haircut"
+                        >
+                            <span class="form__checkbox form__checkbox_service"></span>
+                            Стрижка
+                        </label>
+                    </li>
+
+                    <li class="form__list-item">
+                        <input 
+                            class="checkbox"
+                            type="checkbox" 
+                            name="service" 
+                            value="Окрашивание" 
+                            id="coloration" 
+                            checked
+                        >
+                        <label 
+                            class="form__label form__label_service" 
+                            for="coloration"
+                        >
+                            <span class="form__checkbox form__checkbox_service"></span>
+                            Окрашивание
+                        </label>
+                    </li>
+
+                    <li class="form__list-item">
+                        <input 
+                            class="checkbox"
+                            type="checkbox" 
+                            name="service" 
+                            value="Прическа" 
+                            id="hairstyle" 
+                        >
+                        <label 
+                            class="form__label form__label_service" 
+                            for="hairstyle"
+                        >
+                            <span class="form__checkbox form__checkbox_service"></span>
+                            Прическа
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            
+            <fieldset class="form__fieldset form__fieldset_hair-length">
+                <legend class="form__legend form__legend_hair-length" align="center">
+                    Укажите длину волос
+                </legend>
+                <ul class="form__list form__list_hair-length">
+                    <li class="form__list-item form__list-item_hair-length">
+                        <input class="radio-btn" type="radio" name="hair-length" id="long">
+                        <label for="long" class="form__label form__label_hair-length">
+                            <span class="form__radio-btn"></span>
+                            <i class="form__hair-icon form__hair-icon_long"></i>
+                            Длинные
+                        </label>
+                    </li>
+                    <li class="form__list-item form__list-item_hair-length">
+                        <input class="radio-btn" type="radio" name="hair-length" id="middle" checked>
+                        <label for="middle" class="form__label form__label_hair-length">
+                            <span class="form__radio-btn"></span>
+                            <i class="form__hair-icon form__hair-icon_middle"></i>
+                            Средние
+                        </label>
+                    </li>
+                    <li class="form__list-item form__list-item_hair-length">
+                        <input class="radio-btn" type="radio" name="hair-length" id="short">
+                        <label for="short" class="form__label form__label_hair-length">
+                            <span class="form__radio-btn"></span>
+                            <i class="form__hair-icon form__hair-icon_short"></i>
+                            Короткие
+                        </label>
+                    </li>
+                    <li class="form__list-item form__list-item_hair-length">
+                        <input class="radio-btn" type="radio" name="hair-length" id="shortest">
+                        <label for="shortest" class="form__label form__label_hair-length">
+                            <span class="form__radio-btn"></span>
+                            <i class="form__hair-icon form__hair-icon_shortest"></i>
+                            Очень<br> короткие
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="form__fieldset form__fieldset_additional-services">
+                <legend class="form__legend form__legend_additional-services" align="center">
+                    Дополнительные услуги
+                </legend>
+                <ul class="form__list form__list_additional-services">
+                    <li class="form__list-item form__list-item_additional-services"> 
+                        <input
+                            class="checkbox"
+                            type="checkbox" 
+                            name="add-service" 
+                            value="Укладка" 
+                            id="hair-styling" 
+                            checked
+                        >
+                        <label 
+                            class="form__label form__label_additional-services" 
+                            for="hair-styling"
+                        >
+                            <span class="form__checkbox"></span>
+                            Укладка
+                        </label>
+                    </li>
+
+                    <li class="form__list-item form__list-item_additional-services">
+                        <input 
+                            class="checkbox"
+                            type="checkbox" 
+                            name="add-service" 
+                            value="Завивка" 
+                            id="hair-wave"
+                        >
+                        <label 
+                            class="form__label form__label_additional-services"
+                            for="hair-wave"
+                        >
+                            <span class="form__checkbox"></span>
+                            Завивка
+                        </label>
+                    </li>
+
+                    <li class="form__list-item form__list-item_additional-services">
+                        <input 
+                            class="checkbox"
+                            type="checkbox" 
+                            name="add-service" 
+                            value="Выпрямление" 
+                            id="hair-straightening" 
+                        >
+                        <label 
+                            class="form__label form__label_additional-services" 
+                            for="hair-straightening"
+                        >
+                            <span class="form__checkbox"></span>
+                            Выпрямление
+                        </label>
+                    </li>
+                     <li class="form__list-item form__list-item_additional-services"> 
+                        <input
+                            class="checkbox"
+                            type="checkbox" 
+                            name="add-service" 
+                            value="Мытье головы" 
+                            id="head-washing" 
+                            checked
+                        >
+                        <label 
+                            class="form__label form__label_additional-services" 
+                            for="head-washing"
+                        >
+                            <span class="form__checkbox"></span>
+                            Мытье<br> головы
+                        </label>
+                    </li>
+
+                    <li class="form__list-item form__list-item_additional-services">
+                        <input 
+                            class="checkbox"
+                            type="checkbox" 
+                            name="add-service" 
+                            value="Макияж" 
+                            id="make-up"
+                        >
+                        <label 
+                            class="form__label form__label_additional-services"
+                            for="make-up"
+                        >
+                            <span class="form__checkbox"></span>
+                            Макияж
+                        </label>
+                    </li>
+
+                    <li class="form__list-item form__list-item_additional-services">
+                        <input 
+                            class="checkbox"
+                            type="checkbox" 
+                            name="add-service" 
+                            value="Фотосессия" 
+                            id="photoshoot" 
+                        >
+                        <label 
+                            class="form__label form__label_additional-services" 
+                            for="photoshoot"
+                        >
+                            <span class="form__checkbox"></span>
+                            Фотосессия
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="form__fieldset form__fieldset_add-info">
+                <legend class="form__legend form__legend_add-info" align="center">
+                    Дополнительная информация<br>для мастера
+                </legend>
+                <textarea 
+                    class="form__textarea input-text" 
+                    rows="6" 
+                    cols="60" 
+                    placeholder="Укажите дополнительную информацию или пожелания. Например: дата и время звонка или записи">
+                </textarea>
+            </fieldset>
+            
+            <div class="form__btn-wrapper">
+                <input class="btn form__btn" type="submit" name="submit" value="Отправить заявку">
+                <p class="form__correction">
+                    <span class="form__correction_symbol">*</span>
+                    - Обязательные для заполнения поля
+                </p>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer" id="contacts">
+        <div class="footer__wrapper">
+            <div class="footer__addrees">
+                <a href="index.html#" class="logo footer__logo"></a>
+                <p class="copyright">   
+                    2017 Made by &#xa9; 
+                    <a class="base-link copyright__link" href="http://alicedesign.ru/">
+                        Alisa Filatova
+                    </a>
+                </p>
+            </div>
+
+            <div class="contacts__wrapper">
+                <a class="contacts-btn contacts-btn_vk" href="https://vk.com/lenortat"></a>
+                <a class="contacts-btn contacts-btn_mail" href="mailto:lenortat@mail.ru"></a>
+                <a class="contacts-btn contacts-btn_phone" href="tel:+79500058976"></a>
+            </div>
+
+            <nav class="footer-nav">
+                <ul class="footer-nav__items">
+                    <li class="footer-nav__item footer-nav__item_active">
+                        <a class="footer-nav__link" href="index.html#">Главная</a>
+                    </li>
+                    <li class="footer-nav__item ">
+                        <a class="footer-nav__link" href="#hair">Имидж-студия</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#atelier">Ателье</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#about-us">О нас</a>
+                    </li>
+                </ul>
+                <ul class="footer-nav__items">
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="gallery.html#">Наши работы</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#price-list">Цены</a>
+                    </li>
+                    
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="form.html#">Записаться</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    
+    <script src="js/main-nav.js"></script>
+
+</body>
+</html>

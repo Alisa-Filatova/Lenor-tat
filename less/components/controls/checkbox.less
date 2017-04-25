@@ -1,0 +1,58 @@
+@import '../../variables';
+
+.checkbox {
+    display: none;
+
+    & + label span {
+        width: 40px;
+        height: 40px;
+        border: 2px solid @black;
+        background-color: @white;
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+
+        &:hover {
+           border: 2px solid @orange;
+           transition: 0.3s;
+        }
+
+        &:active {
+           border: 2px solid @pink;
+        }
+    }
+
+    &:checked + label span::after {
+        content: '';
+        width: 22px;
+        height: 4px;
+        position: absolute;
+        display: block;
+        top: 19px;
+        left: 12px;
+        transform: rotate(135deg);
+        background-color: @orange;
+        cursor: pointer;
+    }
+
+    &:checked + label span::before {
+        content: '';
+        width: 15px;
+        height: 4px;
+        position: absolute;
+        display: block;
+        top: 20px;
+        left: 5px;
+        transform: rotate(51deg);
+        background-color: @orange;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
