@@ -4,7 +4,7 @@
 @import 'common';
 @import 'components/base';
 @import 'components/controls/btn';
-@import 'components/logo';
+@import 'animation';
 
 
 .full-gallery {
@@ -50,6 +50,21 @@
         justify-content: space-between;
         align-items: center;
         margin-right: 50px;
+    }
+
+    &__item {
+        animation: fade-in-down ease;
+        animation-duration: 1s;
+
+        &_even {
+           animation: fade-in-down ease;
+           animation-duration: 0.5s;
+        }
+
+        &_odd {
+           animation: fade-in-down ease;
+           animation-duration: 0.8s;
+        }
     }
 }
 

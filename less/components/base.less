@@ -6,6 +6,7 @@
 @import 'controls/paginator';
 @import 'controls/menu-open';
 @import 'controls/close-btn';
+@import 'animation';
 
 .page-header {
     background-color: rgba(0, 0, 0, 0.6);
@@ -140,10 +141,11 @@
         margin: 0 auto;
         width: 353px;
         height: 120px;
+        animation: fade-in ease;
+        animation-duration: 2s;
 
         &_inner {
             margin-left: 160px;
-            display: block;
         }
     }
 
