@@ -264,6 +264,8 @@ body {
   display: inline-block;
   padding: 24px;
   border-bottom: 2px solid transparent;
+  animation: fade-in ease;
+  animation-duration: 2s;
 }
 .main-nav__link:hover {
   color: #ff9900;
@@ -361,10 +363,11 @@ body {
   margin: 0 auto;
   width: 353px;
   height: 120px;
+  animation: fade-in ease;
+  animation-duration: 2s;
 }
 .promo__logo_inner {
   margin-left: 160px;
-  display: block;
 }
 .promo__wrapper {
   padding-top: 280px;
@@ -384,12 +387,23 @@ body {
 .promo__paginator-item {
   margin-bottom: 12px;
   outline: none;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
   -webkit-transform: translateZ(0);
 }
 .promo__paginator-item:hover {
   background-color: #f95d5d;
   border: 2px solid #f95d5d;
-  transition: 0.2s;
 }
 .promo__paginator-item:active {
   background-color: #ff9900;
@@ -540,6 +554,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-transition-property: background-image;
+  -moz-transition-property: background-image;
+  -o-transition-property: background-image;
+  transition-property: background-image;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
 }
 .contacts-btn_vk {
   background-image: url('../img/vk-icon.min.svg');
@@ -637,14 +663,25 @@ body {
   padding-top: 7px;
   line-height: 26px;
   cursor: pointer;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
 }
 .btn:hover {
   background-color: #ff9900;
   color: #ffffff;
-  transition: 0.3s;
 }
 .btn:active {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 #animation {
   visibility: hidden;

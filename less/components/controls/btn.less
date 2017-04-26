@@ -15,16 +15,27 @@
     padding-top: 7px;
     line-height: 26px;
     cursor: pointer;
+    -webkit-transition-property: background;
+    -moz-transition-property: background;
+    -o-transition-property: background;
+    transition-property: background;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
 
 
     &:hover {
         background-color: @orange;
         color: @white;
-        transition: 0.3s;
     }
 
     &:active {
-        opacity: 0.6;
+        opacity: 0.8;
     }
 
 }
