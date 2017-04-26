@@ -135,11 +135,6 @@ body {
 .base-link:active {
   color: #f95d5d;
 }
-.logo {
-  background-image: url('../img/lenor-tat-logo.min.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-}
 .paginator__item {
   width: 14px;
   height: 14px;
@@ -386,12 +381,14 @@ body {
   background-size: 101%;
 }
 .promo__logo {
+  display: block;
   margin: 0 auto;
   width: 353px;
   height: 120px;
 }
 .promo__logo_inner {
   margin-left: 160px;
+  display: block;
 }
 .promo__wrapper {
   padding-top: 280px;
