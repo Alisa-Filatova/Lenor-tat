@@ -6,7 +6,7 @@
 @import 'controls/paginator';
 @import 'controls/menu-open';
 @import 'controls/close-btn';
-@import 'animation';
+@import '../animation';
 
 .page-header {
     background-color: rgba(0, 0, 0, 0.6);
@@ -94,10 +94,11 @@
             margin-top: 37px;
             padding: 0;
             width: 100%;
-            transition: 0.2s;
+            animation: slide-in-down 0.4s;
 
             @media(max-width:@screen_mobile) {
                 transform: translateX(-47px);
+                transition: transform 0.1s linear;
             }
         }
     }
@@ -315,7 +316,7 @@
 
         &:hover {
             opacity: 0.6;
-            transition: 0.3s;
+            transition: 0.3s linear;
         }
 
         &:active {

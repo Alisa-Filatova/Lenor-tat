@@ -324,12 +324,13 @@ body {
     margin-top: 37px;
     padding: 0;
     width: 100%;
-    transition: 0.2s;
+    animation: slide-in-down 0.4s;
   }
 }
 @media (max-width: 768px) and (max-width: 420px) {
   .main-nav_open {
     transform: translateX(-47px);
+    transition: transform 0.1s linear;
   }
 }
 .promo {
@@ -545,7 +546,7 @@ body {
 }
 .footer__logo:hover {
   opacity: 0.6;
-  transition: 0.3s;
+  transition: 0.3s linear;
 }
 .footer__logo:active {
   opacity: 0.3;
