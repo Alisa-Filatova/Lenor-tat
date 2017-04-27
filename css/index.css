@@ -1566,7 +1566,7 @@ body {
 .about-us-item__photo_tata {
   background-image: url('../img/tata-desktop.jpg');
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 192dpi), (min-width: 1280px) and (min-resolution: 1.5dppx) {
   .about-us-item__photo_tata {
     background-image: url('../img/tata-retina.jpg');
   }
@@ -1574,7 +1574,7 @@ body {
 .about-us-item__photo_lenorman {
   background-image: url('../img/lenorman-desktop.jpg');
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 192dpi), (min-width: 1280px) and (min-resolution: 1.5dppx) {
   .about-us-item__photo_lenorman {
     background-image: url('../img/lenorman-retina.jpg');
   }

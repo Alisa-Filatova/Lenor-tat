@@ -379,16 +379,20 @@
         &_tata {
             background-image: url('../img/tata-desktop.jpg');
 
-            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-                background-image: url('../img/tata-retina.jpg');
+            @media(min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+                  (min-width: 1280px) and (min-resolution: 192dpi),
+                  (min-width: 1280px) and (min-resolution: 1.5dppx) {
+                   background-image: url('../img/tata-retina.jpg');
             }
         }
 
         &_lenorman {
             background-image: url('../img/lenorman-desktop.jpg');
 
-            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-                background-image: url('../img/lenorman-retina.jpg');
+            @media(min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+                  (min-width: 1280px) and (min-resolution: 192dpi),
+                  (min-width: 1280px) and (min-resolution: 1.5dppx) {
+                  background-image: url('../img/lenorman-retina.jpg');
             }
         }
     }
