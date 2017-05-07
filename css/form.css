@@ -1094,6 +1094,7 @@ body {
 .form__textarea {
   width: 778px;
   height: 80px;
+  resize: none;
 }
 .form__fieldset {
   border: none;
