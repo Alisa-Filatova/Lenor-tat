@@ -8,7 +8,8 @@
     
     <meta name="keywords" content="парикмахер, стилист, стрижка, окрашивание, имидж, прическа, ателье, театральный костюм, Тата Курина, Татьяна Ленорман">
     <meta name="description" content="Имидж-студия Таты Куриной и Татьяны Ленорман">
-
+    <meta name="author" content="Alisa Filatova, alicedesign.ru">
+    
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
 
@@ -347,12 +348,21 @@
             </div>
             
             <div class="reviews__wrapper">
+                
                 <button type="button" class="slider reviews__slider reviews__slider_left"></button>
-                <div class="reviews-item reviews-item_first reviews-item_show">
-                    <div class="reviews__photo"></div>
+                
+                <div class="reviews-item reviews-item_visible">
+                    <img 
+                        class="reviews__photo" 
+                        src="img/anna-reviews.jpg" 
+                        alt=""
+                    >  
                     <div class="reviews__text">
                         <h2 class="reviews__title">
-                            <a class="base-link reviews__title reviews__title_name" href="https://vk.com/tercterc">
+                            <a 
+                                class="base-link reviews__title reviews__title_name" 
+                                href="https://vk.com/tercterc"
+                            >
                                 Анна Коновалова
                             </a>
                         </h2>
@@ -363,11 +373,19 @@
                         </p>
                     </div>
                 </div>
-                 <div class="reviews-item reviews-item_middle">
-                    <div class="reviews__photo reviews__photo_middle"></div>
+                
+                <div class="reviews-item">
+                    <img 
+                        class="reviews__photo" 
+                        src="img/lana-reviews.jpg" 
+                        alt=""
+                    >
                     <div class="reviews__text">
                         <h2 class="reviews__title">
-                            <a class="base-link reviews__title reviews__title_name" href="https://vk.com/lanapi">
+                            <a 
+                                class="base-link reviews__title reviews__title_name" 
+                                href="https://vk.com/lanapi"
+                            >
                                 Светлана Пь
                             </a>
                         </h2>
@@ -378,11 +396,19 @@
                         </p>
                     </div>
                 </div>
-                <div class="reviews-item reviews-item_last">
-                    <div class="reviews__photo reviews__photo_last"></div>
+                
+                <div class="reviews-item">
+                    <img 
+                        class="reviews__photo" 
+                        src="img/maria-reviews.jpg" 
+                        alt=""
+                    >
                     <div class="reviews__text">
                         <h2 class="reviews__title">
-                            <a class="base-link reviews__title reviews__title_name" href="https://vk.com/id19637417">
+                            <a 
+                                class="base-link reviews__title reviews__title_name" 
+                                href="https://vk.com/id19637417"
+                            >
                                 Мария Осипова
                             </a>
                         </h2>
@@ -394,14 +420,19 @@
                         </p>
                     </div>
                 </div>
+
                 <button type="button" class="slider reviews__slider reviews__slider_right"></button>
+
             </div>
+
             <div class="paginator reviews__paginator">
-                <div class="paginator__item reviews__paginator-item reviews__paginator-item_first reviews__paginator-item_active"></div>
-                <div class="paginator__item reviews__paginator-item reviews__paginator-item__middle"></div>
-                <div class="paginator__item reviews__paginator-item reviews__paginator-item_last"></div>
+                <div class="paginator__item reviews__paginator-item reviews__paginator-item_active"></div>
+                <div class="paginator__item reviews__paginator-item"></div>
+                <div class="paginator__item reviews__paginator-item"></div>
             </div>
+
             <a class="btn reviews__btn_bottom" href="#">Оставить отзыв</a>
+
         </section>
     </main>
 
@@ -416,9 +447,9 @@
                     >
                 </a>
                 <p class="copyright">   
-                    2017 Made by &#xa9; 
+                    &#xa9;2017 made by 
                     <a class="base-link copyright__link" href="http://alicedesign.ru/">
-                        Alisa Filatova
+                        alicedesign.ru
                     </a>
                 </p>
             </div>
@@ -462,7 +493,8 @@
         </div>
     </footer>
 
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="js/main-nav.js"></script>
-
+    <script src="js/index.js"></script>
 </body>
 </html>

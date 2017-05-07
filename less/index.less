@@ -601,21 +601,9 @@
     }
 
     &__photo {
-        width: 130px;
-        height: 130px;
+        width: 140px;
+        height: 140;
         border-radius: 50%;
-        background-image: url('../img/anna-reviews.jpg');
-        background-repeat: no-repeat;
-        background-position: center, top;
-        background-size: cover;
-
-        &_2 {
-           background-image: url('../img/lana-reviews.jpg');
-        }
-
-        &_3 {
-            background-image: url('../img/maria-reviews.jpg');
-        }
     }
 
     &__slider {
@@ -779,14 +767,10 @@
     align-items: center;
     text-align: left;
     flex-basis: 760px;
+    animation: fade-in 0.3s ease-in;
+    display: none;
 
-    &_middle,
-    &_last,
-    &_first {
-        display: none;
-    }
-
-    &_show {
+    &_visible {
         display: flex;
     }
 }

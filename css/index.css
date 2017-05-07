@@ -1705,19 +1705,9 @@ body {
   margin: 20px auto;
 }
 .reviews__photo {
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140;
   border-radius: 50%;
-  background-image: url('../img/anna-reviews.jpg');
-  background-repeat: no-repeat;
-  background-position: center, top;
-  background-size: cover;
-}
-.reviews__photo_2 {
-  background-image: url('../img/lana-reviews.jpg');
-}
-.reviews__photo_3 {
-  background-image: url('../img/maria-reviews.jpg');
 }
 .reviews__slider {
   border: none;
@@ -1849,12 +1839,9 @@ body {
   align-items: center;
   text-align: left;
   flex-basis: 760px;
-}
-.reviews-item_middle,
-.reviews-item_last,
-.reviews-item_first {
+  animation: fade-in 0.3s ease-in;
   display: none;
 }
-.reviews-item_show {
+.reviews-item_visible {
   display: flex;
 }
