@@ -5,11 +5,11 @@ var close = document.querySelector('.close-btn');
 open.addEventListener('click', function(event) {
      event.preventDefault();
      nav.classList.add('main-nav_open');
-     open.classList.remove('menu-open');
+     open.classList.add('menu-open_hidden');
 });
 
 close.addEventListener('click', function(event) {
     event.preventDefault();
     nav.classList.remove('main-nav_open');
-    open.classList.add('menu-open');
+    open.classList.remove('menu-open_hidden');
 });

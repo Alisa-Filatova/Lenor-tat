@@ -78,27 +78,24 @@
 
         &__link {
             width: 100%;
-            font-size: 32px;
-            line-height: 32px;
+            padding: 12px 24px;
+            font-size: 25px;
+            line-height: 30px;
             font-weight: 500;
             background-color: @black_light;
             border-bottom: 2px solid @orange_dark;
             border-top: 1px solid @orange;
+            animation: none;
         }
 
         &_open {
             display: block;
             position: absolute;
-            transform: translateX(-156px);
-            margin-top: 37px;
+            top: 70px;
+            left: -45px;
             padding: 0;
             width: 100%;
-            animation: slide-in-left 0.3s ease;
-
-            @media(max-width:@screen_mobile) {
-                transform: translateX(-47px);
-                transition: transform 0.1s linear;
-            }
+            animation: slide-in-left 0.3s linear;
         }
     }
 }
@@ -107,9 +104,12 @@
 
     .main-nav {
         &__link {
-            font-size: 25px;
-            line-height: 25px;
-            padding: 24px;
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        &_open {
+            top: 60px;
         }
     }
 }
@@ -256,7 +256,7 @@
         }
 
         &__paginator {
-            margin-left: 787px;
+            display: none;
         }
 
         &_inner {
