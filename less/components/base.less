@@ -9,9 +9,19 @@
 @import '../animation';
 
 .page-header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     z-index: 1500;
+}
+
+@media(max-width: 1040px) {
+
+    .page-header {
+        padding: 0;
+    }
 }
 
 @media(max-width:@screen_tablet) {
@@ -19,7 +29,6 @@
     .page-header {
         position: relative;
         padding: 40px 0;
-        padding-left: 110px;
         width: 100%;
     }
 }
@@ -65,15 +74,29 @@
     }
 }
 
+@media(max-width: 1000px) {
+
+    .main-nav {
+
+        &__link {
+            padding: 24px 9px;
+        }
+    }
+}
+
 @media(max-width:@screen_tablet) {
 
     .main-nav {
+        position: absolute;
+        top: 70px;
+        padding: 0;
+        width: 100%;
         display: none;
 
         &__items {
             flex-flow: column nowrap;
             align-items: stretch;
-            padding-left: 40px;
+            justify-content: center;
         }
 
         &__link {
@@ -90,12 +113,6 @@
 
         &_open {
             display: block;
-            position: absolute;
-            top: 70px;
-            left: -45px;
-            padding: 0;
-            width: 100%;
-            animation: slide-in-left 0.3s linear;
         }
     }
 }
@@ -109,7 +126,7 @@
         }
 
         &_open {
-            top: 60px;
+            top: 50px;
         }
     }
 }
@@ -119,18 +136,19 @@
     background-image: url('../img/footer-black.min.svg'), url('../img/slide-1.jpg');
     background-position: center bottom, center top;
     background-repeat: no-repeat;
-    background-size: 101%;
+    background-size: 101%, cover;
     position: relative;
 
     &__title {
         color: @white;
-        font-size: 30px;
-        font-weight: 300;
-        font-size: 19px;
+        font-size: 22px;
+        font-weight: 400;
         line-height: 29px;
         text-align: left;
         display: inline-block;
-        max-width: 380px;
+        max-width: 385px;
+        opacity: 0.8;
+        margin: 0 auto;
 
 
         &_main {
@@ -152,10 +170,9 @@
     &__logo {
         display: block;
         margin: 0 auto;
-        width: 353px;
-        height: 120px;
-        animation: fade-in ease;
-        animation-duration: 2s;
+        width: 426px;
+        height: auto;
+        animation: fade-in 2s ease;
 
         &_inner {
             margin-left: 160px;
@@ -163,8 +180,8 @@
     }
 
     &__wrapper {
-        padding-top: 280px;
-        padding-bottom: 280px;
+        padding-top: 22%;
+        padding-bottom: 20%;
 
         &_gallery {
             padding-bottom: 283px;
@@ -176,25 +193,17 @@
         flex-flow: column nowrap;
         position: fixed;
         top: 225px;
-        margin-left: 1200px;
+        margin-left: 1368px;
         z-index: 2500;
     }
 
     &__paginator-item {
         margin-bottom: 12px;
         outline: none;
-        -webkit-transition-property: background;
-        -moz-transition-property: background;
-        -o-transition-property: background;
-        transition-property: background;
-        -webkit-transition-duration: 0.2s;
-        -moz-transition-duration: 0.2s;
-        -o-transition-duration: 0.2s;
-        transition-duration: 0.2s;
-        -webkit-transition-timing-function: linear;
-        -moz-transition-timing-function: linear;
-        -o-transition-timing-function: linear;
-        transition-timing-function: linear;
+        -webkit-transition: background 0.2s linear;
+        -moz-transition: background 0.2s linear;
+        -o-transition: background 0.2s linear;
+        transition: background 0.2s linear;
         // http://stackoverflow.com/questions/7947385/hovering-over-css-transition-in-safari-lightens-certain-font-color
         -webkit-transform: translateZ(0);
 
@@ -215,9 +224,14 @@
            background-color: @orange;
         }
     }
+}
 
-    &__slider-btn {
-        top: 730px;
+@media(max-width:@screen_laptop) {
+    .promo {
+
+        &__wrapper {
+            padding-bottom: 15%;
+        }
     }
 }
 
@@ -228,7 +242,6 @@
 
         &__wrapper {
             padding: 125px 0;
-            padding-bottom: 200px;
 
             &_gallery {
                 padding: 141px 0;
@@ -237,22 +250,11 @@
         }
 
         &__logo {
-            margin-left: 266px;
 
             &_inner {
                 margin-left: 24px;
                 margin-bottom: 52px;
             }
-
-            &_gallery {
-                margin-left: 380px;
-            }
-        }
-
-        &__title {
-            margin-left: 128px;
-            margin-top: 0;
-            font-weight: 400;
         }
 
         &__paginator {
@@ -270,16 +272,15 @@
 @media(max-width:@screen_mobile) {
 
     .promo {
-         background-image: url('../img/footer-black.min.svg'), url('../img/slide-1-mobile.jpg');
+        background-image: url('../img/footer-black.min.svg'), url('../img/slide-1-mobile.jpg');
+        padding-bottom: 20px;
 
         &__wrapper {
             padding: 27px 0;
         }
 
         &__logo {
-            width: 253px;
-            height: 78px;
-            margin-left: 108px;
+            width: 77%;
 
             &_inner {
                 margin-left: 68px;
@@ -294,6 +295,7 @@
         &__title {
             font-size: 16px;
             line-height: 24px;
+            text-align: center;
 
             &_gallery {
                 margin-left: 70px;
@@ -323,23 +325,14 @@
         width: 288px;
         height: 97px;
         display: block;
+        transition: 0.3s linear;
 
         &:hover {
-            opacity: 0.6;
-            transition: 0.3s linear;
+            opacity: 0.8;
         }
 
         &:active {
-            opacity: 0.3;
-        }
-    }
-}
-
-@media(max-width:@screen_tablet) {
-
-    .footer {
-        &__wrapper {
-            justify-content: space-between;
+            opacity: 0.5;
         }
     }
 }
@@ -416,6 +409,7 @@
     &__items {
         list-style: none;
         text-align: left;
+        margin-left: 20px;
     }
 
     &__link {
@@ -426,7 +420,7 @@
         &:hover {
             color: @orange;
             border-bottom: 2px solid @pink;
-            transition: 0.2s;
+            transition: 0.2s ease-in;
         }
 
         &:active {
@@ -447,6 +441,7 @@
             flex-basis: 731px;
             padding: 0;
             font-size: 18px;
+            margin-bottom: 20px;
         }
     }
 }

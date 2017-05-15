@@ -1,21 +1,20 @@
 @import 'variables';
 
 
-.container () {
-    width: @container_desktop;
+.container() {
+    max-width: @screen_desktop;
     margin: 0 auto;
-    padding: 0 40px;
 
     @media (max-width: @screen_tablet) {
-        width: @container_tablet;
-        margin: 0;
-        padding: 0 55px;
+        width: 100%;
+        max-width: 768px;
+
     }
 
     @media (max-width: @screen_mobile) {
-        width: @container_mobile;
-        margin: 0;
-        padding: 0 23px;
+        width: 100%;
+        max-width: 425px;
+        padding: 0 10px;
     }
 
     &__inner {
@@ -23,8 +22,13 @@
     }
 }
 
+.wrapper() {
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
-.container-fluid () {
+
+.container-fluid() {
     width: auto;
 
     @media @tablet-widths {

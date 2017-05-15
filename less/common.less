@@ -1,9 +1,15 @@
 @import 'fonts';
 @import 'variables';
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     position: relative;
-    max-width: @screen_desktop;
+    min-width: 320px;
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -11,17 +17,7 @@ body {
     line-height: 27px;
     background-color: @black_light;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
     overflow-y: scroll;
     overflow-x: hidden;
-
-    @media (max-width: @screen_tablet) {
-        min-width: @screen_tablet;
-    }
-
-    @media (max-width: @screen_mobile) {
-        min-width: @screen_mobile;
-    }
 }
-
-

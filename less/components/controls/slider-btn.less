@@ -2,7 +2,8 @@
 
 .slider-btn {
     position: absolute;
-    left: 615px;
+    left: 49%;
+    top: 97%;
     width: 52px;
     height: 52px;
     border-radius: 50%;
@@ -10,30 +11,22 @@
     cursor: pointer;
     z-index: 1000;
     opacity: 0.8;
-    -webkit-transition-property: opacity;
-    -moz-transition-property: opacity;
-    -o-transition-property: opacity;
-    transition-property: opacity;
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -webkit-transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
 
     &::after {
         content: '';
         width: 0;
         height: 0;
         border: 25px solid transparent;
-        border-top: 4px solid @orange;
-        border-right: 4px solid @orange;
+        border-top: 3px solid @orange;
+        border-right: 3px solid @orange;
         display: inline-block;
         position: absolute;
-        top: 4px;
-        left: 11px;
+        top: 2px;
+        left: 9px;
         transform: rotate(134deg);
     }
 
@@ -46,14 +39,13 @@
     }
 }
 
-@media(max-width:@screen_tablet) {
+@media(max-width:@screen_laptop) {
     .slider-btn {
-        left: 413px;
-        top: 483px;
+        top: 95%;
     }
 }
 
-@media(max-width:@screen_mobile) {
+@media(max-width:@screen_tablet) {
     .slider-btn {
         display: none;
     }
