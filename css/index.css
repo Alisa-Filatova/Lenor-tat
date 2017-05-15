@@ -211,6 +211,7 @@ body {
   .menu-open {
     width: 38px;
     height: 20px;
+    right: 16px;
   }
 }
 .close-btn {
@@ -233,7 +234,7 @@ body {
   background-color: #ff9900;
   position: absolute;
   top: 9px;
-  left: 2px;
+  left: 12px;
   transform: rotate(41deg);
 }
 @media (max-width: 425px) {
@@ -250,7 +251,7 @@ body {
   background-color: #ff9900;
   position: absolute;
   top: 9px;
-  left: 2px;
+  left: 11px;
   transform: rotate(137deg);
 }
 @media (max-width: 425px) {
@@ -512,7 +513,7 @@ body {
 }
 @media (max-width: 425px) {
   .promo {
-    background-image: url('../img/footer-black.min.svg'), url('../img/slide-1-mobile.jpg');
+    background-image: none;
     padding-bottom: 20px;
   }
   .promo__wrapper {
@@ -810,7 +811,7 @@ body {
   padding: 5px 0;
   margin-top: 40px;
   display: inline-block;
-  width: 100%;
+  width: 230px;
 }
 @media (min-width: 768px) {
   .price {

@@ -177,6 +177,7 @@ body {
   .menu-open {
     width: 38px;
     height: 20px;
+    right: 16px;
   }
 }
 .close-btn {
@@ -199,7 +200,7 @@ body {
   background-color: #ff9900;
   position: absolute;
   top: 9px;
-  left: 2px;
+  left: 12px;
   transform: rotate(41deg);
 }
 @media (max-width: 425px) {
@@ -216,7 +217,7 @@ body {
   background-color: #ff9900;
   position: absolute;
   top: 9px;
-  left: 2px;
+  left: 11px;
   transform: rotate(137deg);
 }
 @media (max-width: 425px) {
@@ -655,7 +656,7 @@ body {
 }
 @media (max-width: 425px) {
   .promo {
-    background-image: url('../img/footer-black.min.svg'), url('../img/slide-1-mobile.jpg');
+    background-image: none;
     padding-bottom: 20px;
   }
   .promo__wrapper {
@@ -856,7 +857,7 @@ body {
   height: 4px;
   position: absolute;
   display: block;
-  top: 19px;
+  top: 17px;
   left: 12px;
   transform: rotate(135deg);
   background-color: #ff9900;
@@ -896,8 +897,8 @@ body {
 }
 .radio-btn:checked + label span::after {
   position: absolute;
-  top: 12px;
-  left: 11px;
+  top: 9px;
+  left: 9px;
   width: 18px;
   height: 18px;
   content: '';
@@ -997,7 +998,6 @@ body {
 .form__list-item_name {
   display: flex;
   flex-flow: column wrap;
-  flex-basis: 285px;
 }
 .form__radio-btn,
 .form__checkbox {
