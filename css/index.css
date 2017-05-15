@@ -281,7 +281,7 @@ body {
   position: absolute;
   z-index: 1500;
 }
-@media (max-width: 1040px) {
+@media (max-width: 1070px) {
   .page-header {
     padding: 0;
   }
@@ -328,6 +328,7 @@ body {
   padding: 0;
 }
 .main-nav__link {
+  font-size: 18px;
   text-decoration: none;
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
@@ -446,7 +447,7 @@ body {
   margin-left: 160px;
 }
 .promo__wrapper {
-  padding-top: 22%;
+  padding-top: 20%;
   padding-bottom: 20%;
 }
 .promo__wrapper_gallery {
@@ -690,8 +691,8 @@ body {
   }
 }
 .paginator__item {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   border: 2px solid #e88705;
   opacity: 0.8;
