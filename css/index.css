@@ -669,7 +669,7 @@ body {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 708px) {
   .footer-nav {
     display: none;
   }
