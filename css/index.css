@@ -1556,8 +1556,8 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
-  padding-top: 5%;
-  padding-bottom: 6%;
+  padding-top: 120px;
+  padding-bottom: 130px;
   background-color: #ffffff;
   background-image: url('../img/header-black.min.svg'), url('../img/footer-black.min.svg');
   background-position: center top, center bottom;
