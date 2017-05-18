@@ -29,6 +29,7 @@
     .page-header {
         position: relative;
         padding: 40px 0;
+        padding-bottom: 25px;
         width: 100%;
     }
 }
@@ -72,15 +73,22 @@
         &:active {
             color: @pink;
         }
+
+        &_active {
+            color: @pink;
+        }
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1147px) {
 
     .main-nav {
+        padding-left: 10px;
+        padding-right: 10px;
 
         &__link {
-            padding: 24px 9px;
+            padding: 24px 8px;
+            font-size: 16px;
         }
     }
 }
@@ -165,7 +173,7 @@
     &_inner {
         background-image: url('../img/footer-orange-rotate.min.svg'), url('../img/slide-2.jpg');
         background-position: center 101%, center top;
-        background-size: 101%;
+        background-size: 101%, cover;
     }
 
     &__logo {
@@ -233,6 +241,13 @@
         &__wrapper {
             padding-bottom: 15%;
         }
+
+        &__logo {
+
+            &_inner {
+                margin-left: 73px;
+            }
+        }
     }
 }
 
@@ -242,18 +257,13 @@
         background-image: url('../img/footer-black.min.svg'), url('../img/slide-1-tablet.jpg');
 
         &__wrapper {
-            padding: 125px 0;
-
-            &_gallery {
-                padding: 141px 0;
-                padding-bottom: 193px;
-            }
+            padding: 76px 0;
         }
 
         &__logo {
 
             &_inner {
-                width: 340px;
+                width: 45%;
                 margin-left: 24px;
                 margin-bottom: 52px;
             }
@@ -265,7 +275,6 @@
 
         &_inner {
             background-position: center bottom, right 58%;
-            background-size: 101%;
             background-image: url('../img/footer-orange-rotate.min.svg'), url('../img/slide-2-tablet.jpg');
         }
     }

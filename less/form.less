@@ -10,7 +10,7 @@
 @import 'components/controls/input-text';
 
 .appointment-form {
-    .container ();
+    .container();
     background-color: @white;
     background-image: url('../img/header-orange-rotate.min.svg'), url('../img/footer-black-rotate.min.svg');
     background-position: center top, center bottom;
@@ -24,7 +24,7 @@
 
     .appointment-form {
         padding-top: 72px;
-        padding-bottom: 160px;
+        padding-bottom: 159px;
     }
 }
 
@@ -223,7 +223,7 @@
     }
 }
 
-@media(max-width:@screen_laptop) {
+@media(max-width: 1040px) {
     .form {
         max-width: 90%;
 
@@ -239,6 +239,11 @@
 
         &__input_name {
             width: 250px;
+
+            @media(max-width: 920px) {
+                margin-right: 10px;
+            }
+
         }
     }
 }
@@ -289,12 +294,16 @@
         &__input {
             &_name {
                 margin-right: 27px;
+
+                @media(max-width: 672px) {
+                    margin-right: 10px;
+                }
             }
         }
     }
 }
 
-@media(max-width: 625px) {
+@media(max-width: 627px) {
 
     .form {
 
@@ -400,7 +409,6 @@
         }
     }
 }
-
 
 
 

@@ -1,53 +1,4 @@
 
-#animation {
-    visibility: hidden;
-}
-
-.animation {
-    visibility: visible !important;
-    animation-fill-mode: both !important;
-    -webkit-animation-fill-mode: both !important;
-}
-
-.replay {
-    -webkit-animation-iteration-count: infinite !important;
-    animation-iteration-count: infinite !important;
-}
-
-.delay-05s {
-    -webkit-animation-delay: .5s !important;
-    animation-delay: .5s !important;
-}
-
-.delay-1s {
-    -webkit-animation-delay: 1s !important;
-    animation-delay: 1s !important;
-}
-
-.delay-1-5s {
-    -webkit-animation-delay: 1.5s !important;
-    animation-delay: 1.5s !important;
-}
-
-.delay-2s {
-    -webkit-animation-delay: 2s !important;
-    animation-delay: 2s !important;
-}
-
-.delay-3s {
-    -webkit-animation-delay: 3s !important;
-    animation-delay: 3s !important;
-}
-
-/*fade-in*/
-
-.fade-in {
-    -webkit-animation: fade-in 1.2s;
-    animation: fade-in 1.2s;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-}
-
 @-webkit-keyframes fade-in {
     0% {
         opacity: 0;
@@ -66,15 +17,6 @@
     100% {
         opacity: 1;
     }
-}
-
-/*fade-in right*/
-
-.fade-in-right {
-    -webkit-animation: fade-in-right 1s;
-    animation: fade-in-right 1s;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes fade-in-right {
@@ -102,14 +44,6 @@
     }
 }
 
-/*fade-in down*/
-.fade-in-down {
-    -webkit-animation: fade-in-down 1s;
-    animation: fade-in-down 1s;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-}
-
 @-webkit-keyframes fade-in-down {
     0% {
         -webkit-transform: translateY(-100%);
@@ -134,15 +68,6 @@
     }
 }
 
-/*slide-in down*/
-
-.slide-in-down {
-    -webkit-animation: slide-in-down 1.2s;
-    animation: slide-in-down 1.2s;
-    -webkit-animation-timing-function: ease;
-    animation-timing-function: ease;
-}
-
 @-webkit-keyframes slide-in-down {
     0% {
         -webkit-transform: translateY(-1000px);
@@ -163,14 +88,6 @@
     }
 }
 
-/*slide-in right*/
-.slide-in-right {
-    -webkit-animation: slide-in-right 1.2s;
-    animation: slide-in-right 1.2s;
-    -webkit-animation-timing-function: ease;
-    animation-timing-function: ease;
-}
-
 @-webkit-keyframes slide-in-right {
     0% {
         -webkit-transform: translateX(-2000px);
@@ -189,13 +106,6 @@
     100% {
         transform: translateX(0px);
     }
-}
-
-.slide-in-left {
-    -webkit-animation: slide-in-left 1.2s;
-    animation: slide-in-left 1.2s;
-    -webkit-animation-timing-function: ease;
-    animation-timing-function: ease;
 }
 
 @-webkit-keyframes slide-in-left {

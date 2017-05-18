@@ -195,12 +195,15 @@ body {
     background-color: #030303;
     width: 58px;
     height: 40px;
-    background-image: url('../img/burger.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     z-index: 1100;
     outline: none;
+  }
+  .menu-open__open-bar {
+    display: block;
+    width: 45px;
+    height: 3px;
+    margin-bottom: 7px;
+    background-color: #ff9900;
   }
   .menu-open_hidden {
     z-index: 0;
@@ -209,9 +212,13 @@ body {
 }
 @media (max-width: 425px) {
   .menu-open {
-    width: 38px;
-    height: 20px;
+    width: 50px;
+    height: 30px;
     right: 16px;
+  }
+  .menu-open__open-bar {
+    width: 38px;
+    height: 3px;
   }
 }
 .close-btn {
@@ -229,12 +236,12 @@ body {
 .close-btn::after {
   content: '';
   display: block;
-  width: 33px;
-  height: 5px;
+  width: 30px;
+  height: 4px;
   background-color: #ff9900;
   position: absolute;
-  top: 9px;
-  left: 12px;
+  top: 8px;
+  left: 19px;
   transform: rotate(41deg);
 }
 @media (max-width: 425px) {
@@ -246,12 +253,12 @@ body {
 .close-btn::before {
   content: '';
   display: block;
-  width: 33px;
-  height: 5px;
+  width: 30px;
+  height: 4px;
   background-color: #ff9900;
   position: absolute;
-  top: 9px;
-  left: 11px;
+  top: 8px;
+  left: 18px;
   transform: rotate(137deg);
 }
 @media (max-width: 425px) {
@@ -268,9 +275,9 @@ body {
 @media (max-width: 425px) {
   .close-btn {
     top: 18px;
-    right: 35px;
-    width: 20px;
-    height: 20px;
+    right: 10px;
+    width: 50px;
+    height: 30px;
   }
 }
 .page-header {
@@ -290,6 +297,7 @@ body {
   .page-header {
     position: relative;
     padding: 40px 0;
+    padding-bottom: 25px;
     width: 100%;
   }
 }
@@ -345,9 +353,17 @@ body {
 .main-nav__link:active {
   color: #f95d5d;
 }
-@media (max-width: 1000px) {
+.main-nav__link_active {
+  color: #f95d5d;
+}
+@media (max-width: 1147px) {
+  .main-nav {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .main-nav__link {
-    padding: 24px 9px;
+    padding: 24px 8px;
+    font-size: 16px;
   }
 }
 @media (max-width: 768px) {
@@ -434,7 +450,7 @@ body {
 .promo_inner {
   background-image: url('../img/footer-orange-rotate.min.svg'), url('../img/slide-2.jpg');
   background-position: center 101%, center top;
-  background-size: 101%;
+  background-size: 101%, cover;
 }
 .promo__logo {
   display: block;
@@ -487,19 +503,19 @@ body {
   .promo__wrapper {
     padding-bottom: 15%;
   }
+  .promo__logo_inner {
+    margin-left: 73px;
+  }
 }
 @media (max-width: 768px) {
   .promo {
     background-image: url('../img/footer-black.min.svg'), url('../img/slide-1-tablet.jpg');
   }
   .promo__wrapper {
-    padding: 125px 0;
-  }
-  .promo__wrapper_gallery {
-    padding: 141px 0;
-    padding-bottom: 193px;
+    padding: 76px 0;
   }
   .promo__logo_inner {
+    width: 45%;
     margin-left: 24px;
     margin-bottom: 52px;
   }
@@ -508,7 +524,6 @@ body {
   }
   .promo_inner {
     background-position: center bottom, right 58%;
-    background-size: 101%;
     background-image: url('../img/footer-orange-rotate.min.svg'), url('../img/slide-2-tablet.jpg');
   }
 }
@@ -708,9 +723,7 @@ body {
 @media (min-width: 768px) {
   .price {
     width: 84%;
-    /* 640px / 768px ~= 84% */
     max-width: 960px;
-    /* 960px / .84 ~= 1142px (центровка начнётся чуть раньше 1200px) */
     margin: 0 auto;
   }
 }
@@ -927,45 +940,6 @@ body {
     width: 293px;
   }
 }
-#animation {
-  visibility: hidden;
-}
-.animation {
-  visibility: visible !important;
-  animation-fill-mode: both !important;
-  -webkit-animation-fill-mode: both !important;
-}
-.replay {
-  -webkit-animation-iteration-count: infinite !important;
-  animation-iteration-count: infinite !important;
-}
-.delay-05s {
-  -webkit-animation-delay: .5s !important;
-  animation-delay: .5s !important;
-}
-.delay-1s {
-  -webkit-animation-delay: 1s !important;
-  animation-delay: 1s !important;
-}
-.delay-1-5s {
-  -webkit-animation-delay: 1.5s !important;
-  animation-delay: 1.5s !important;
-}
-.delay-2s {
-  -webkit-animation-delay: 2s !important;
-  animation-delay: 2s !important;
-}
-.delay-3s {
-  -webkit-animation-delay: 3s !important;
-  animation-delay: 3s !important;
-}
-/*fade-in*/
-.fade-in {
-  -webkit-animation: fade-in 1.2s;
-  animation: fade-in 1.2s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
@@ -981,13 +955,6 @@ body {
   100% {
     opacity: 1;
   }
-}
-/*fade-in right*/
-.fade-in-right {
-  -webkit-animation: fade-in-right 1s;
-  animation: fade-in-right 1s;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
 }
 @-webkit-keyframes fade-in-right {
   0% {
@@ -1009,13 +976,6 @@ body {
     opacity: 1;
   }
 }
-/*fade-in down*/
-.fade-in-down {
-  -webkit-animation: fade-in-down 1s;
-  animation: fade-in-down 1s;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-}
 @-webkit-keyframes fade-in-down {
   0% {
     -webkit-transform: translateY(-100%);
@@ -1036,13 +996,6 @@ body {
     opacity: 1;
   }
 }
-/*slide-in down*/
-.slide-in-down {
-  -webkit-animation: slide-in-down 1.2s;
-  animation: slide-in-down 1.2s;
-  -webkit-animation-timing-function: ease;
-  animation-timing-function: ease;
-}
 @-webkit-keyframes slide-in-down {
   0% {
     -webkit-transform: translateY(-1000px);
@@ -1059,13 +1012,6 @@ body {
     transform: translateY(0px);
   }
 }
-/*slide-in right*/
-.slide-in-right {
-  -webkit-animation: slide-in-right 1.2s;
-  animation: slide-in-right 1.2s;
-  -webkit-animation-timing-function: ease;
-  animation-timing-function: ease;
-}
 @-webkit-keyframes slide-in-right {
   0% {
     -webkit-transform: translateX(-2000px);
@@ -1081,12 +1027,6 @@ body {
   100% {
     transform: translateX(0px);
   }
-}
-.slide-in-left {
-  -webkit-animation: slide-in-left 1.2s;
-  animation: slide-in-left 1.2s;
-  -webkit-animation-timing-function: ease;
-  animation-timing-function: ease;
 }
 @-webkit-keyframes slide-in-left {
   0% {
@@ -1113,8 +1053,8 @@ body {
   background-repeat: no-repeat;
   background-size: 101%;
   color: #ffffff;
-  padding-bottom: 6%;
-  padding-top: 10%;
+  padding-bottom: 140px;
+  padding-top: 160px;
   position: relative;
 }
 @media (max-width: 768px) {
@@ -1468,6 +1408,10 @@ body {
   font-size: 26px;
   margin: 0;
   font-weight: 600;
+}
+.about-us-item__link {
+  font-size: 16px;
+  text-decoration: underline;
 }
 .about-us-item__photo {
   width: 250px;
