@@ -464,7 +464,7 @@ body {
 }
 .promo__wrapper {
   padding-top: 20%;
-  padding-bottom: 20%;
+  padding-bottom: 19%;
 }
 .promo__wrapper_gallery {
   padding-bottom: 283px;
@@ -501,7 +501,7 @@ body {
 }
 @media (max-width: 1024px) {
   .promo__wrapper {
-    padding-bottom: 15%;
+    padding-bottom: 17%;
   }
   .promo__logo_inner {
     margin-left: 73px;
@@ -1386,6 +1386,9 @@ body {
   }
 }
 @media (max-width: 362px) {
+  .about-us {
+    padding-bottom: 34%;
+  }
   .about-us__btn-wrapper {
     flex-wrap: wrap;
   }
@@ -1556,10 +1559,13 @@ body {
 @media (max-width: 1024px) {
   .gallery {
     padding-top: 8%;
-    padding-bottom: 9%;
+    padding-bottom: 8%;
   }
   .gallery__wrapper {
     max-width: 768px;
+  }
+  .gallery__slider-btn {
+    top: 98.5%;
   }
 }
 @media (max-width: 768px) {

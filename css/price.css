@@ -499,7 +499,7 @@ body {
 }
 .promo__wrapper {
   padding-top: 20%;
-  padding-bottom: 20%;
+  padding-bottom: 19%;
 }
 .promo__wrapper_gallery {
   padding-bottom: 283px;
@@ -536,7 +536,7 @@ body {
 }
 @media (max-width: 1024px) {
   .promo__wrapper {
-    padding-bottom: 15%;
+    padding-bottom: 17%;
   }
   .promo__logo_inner {
     margin-left: 73px;
@@ -750,7 +750,13 @@ body {
 .price-container {
   max-width: 1440px;
   margin: 0 auto;
+  background-color: #1e1e1e;
+  background-image: url('../img/header-black.min.svg'), url('../img/footer-black.min.svg');
+  background-position: center top, center bottom;
+  background-repeat: no-repeat;
+  background-size: 101%;
   padding-top: 40px;
+  padding-bottom: 65px;
   position: relative;
 }
 @media (max-width: 768px) {
@@ -769,12 +775,6 @@ body {
 .price-container__inner {
   padding: 0;
 }
-@media (max-width: 768px) {
-  .price-container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
 @media (max-width: 479px) {
   .price-container {
     padding-left: 10px;
@@ -783,7 +783,7 @@ body {
   }
 }
 .price {
-  width: 84%;
+  width: 95%;
   max-width: 1000px;
   margin: 0 auto;
   font-family: 'Arial Narrow', 'PT Sans Narrow', sans-serif;
@@ -806,6 +806,9 @@ body {
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
+}
+.price__link {
+  text-decoration: underline;
 }
 .price__intro {
   margin: 0;
@@ -884,7 +887,7 @@ body {
     font-size: 27px;
   }
   .price__intro {
-    font-size: 20px;
+    font-size: 16px;
   }
   .price__value {
     font-size: 23px;

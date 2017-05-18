@@ -534,7 +534,7 @@ body {
 }
 .promo__wrapper {
   padding-top: 20%;
-  padding-bottom: 20%;
+  padding-bottom: 19%;
 }
 .promo__wrapper_gallery {
   padding-bottom: 283px;
@@ -571,7 +571,7 @@ body {
 }
 @media (max-width: 1024px) {
   .promo__wrapper {
-    padding-bottom: 15%;
+    padding-bottom: 17%;
   }
   .promo__logo_inner {
     margin-left: 73px;
