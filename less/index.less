@@ -60,13 +60,12 @@
         border: 2px solid @orange;
         padding-left: 0;
         padding-right: 0;
-        margin: 20px 0;
-        margin-bottom: 0;
+        margin: 20px 0 0;
         color: @white;
-        -webkit-transition-property: background 0.3s linear;
-        -moz-transition-property: background 0.3s linear;
-        -o-transition-property: background 0.3s linear;
-        transition-property: background 0.3s linear;
+        -webkit-transition: background 0.3s linear;
+        -moz-transition: background 0.3s linear;
+        -o-transition: background 0.3s linear;
+        transition: background 0.3s linear;
 
         &:hover {
             background-color: @orange;
@@ -114,14 +113,14 @@
     }
 }
 
-@media(max-width: 1385px) {
+@media (max-width: 1385px) {
     .services {
         padding-top: 15%;
         padding-bottom: 12%;
     }
 }
 
-@media(max-width:@screen_laptop) {
+@media (max-width: @screen_laptop) {
 
     .services {
         padding-top: 15%;
@@ -132,7 +131,7 @@
     }
 }
 
-@media(max-width: 960px) {
+@media (max-width: 960px) {
 
     .services {
         &__wrapper {
@@ -145,7 +144,7 @@
     }
 }
 
-@media(max-width:@screen_tablet) {
+@media (max-width: @screen_tablet) {
 
     .services {
 
@@ -156,7 +155,7 @@
     }
 }
 
-@media(max-width:@screen_mobile) {
+@media (max-width: @screen_mobile) {
 
     .services {
         padding-top: 64px;
@@ -178,7 +177,7 @@
     }
 }
 
-@media(max-width: 320px) {
+@media (max-width: 320px) {
     .services {
         &__wrapper {
             padding: 0 7px;
@@ -305,9 +304,7 @@
 
 
     &__title {
-        margin: auto;
-        margin-top: 40px;
-        margin-bottom: 70px;
+        margin: 40px auto 70px;
         font-size: 41px;
         line-height: 41px;
         font-weight: 400;
@@ -351,7 +348,7 @@
     }
 }
 
-@media(max-width:@screen_laptop) {
+@media (max-width: @screen_laptop) {
     .about-us {
         &__slider-btn {
             top: 97%;
@@ -359,7 +356,7 @@
     }
 }
 
-@media(max-width: 980px) {
+@media (max-width: 980px) {
 
     .about-us {
         padding-bottom: 10%;
@@ -377,7 +374,7 @@
     }
 }
 
-@media(max-width: 711px) {
+@media (max-width: 711px) {
 
     .about-us {
         padding-bottom: 30%;
@@ -399,7 +396,7 @@
     }
 }
 
-@media(max-width: 362px) {
+@media (max-width: 362px) {
 
     .about-us {
         padding-bottom: 34%;
@@ -458,7 +455,7 @@
         &_lenorman {
             background-image: url('../img/lenorman-desktop.jpg');
 
-            @media(min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+            @media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
                   (min-width: 1280px) and (min-resolution: 192dpi),
                   (min-width: 1280px) and (min-resolution: 1.5dppx) {
                   background-image: url('../img/lenorman-retina.jpg');
@@ -471,7 +468,7 @@
     }
 }
 
-@media(max-width: 980px) {
+@media (max-width: 980px) {
 
     .about-us-item {
 
@@ -499,7 +496,7 @@
     }
 }
 
-@media(max-width: 711px) {
+@media (max-width: 711px) {
 
     .about-us-item {
         align-items: center;
@@ -537,7 +534,7 @@
     }
 }
 
-@media(max-width:@screen_mobile) {
+@media (max-width: @screen_mobile) {
 
     .about-us-item {
         &__title {
@@ -555,10 +552,9 @@
     position: relative;
     padding-top: 120px;
     padding-bottom: 130px;
-    background-color: @white;
-    background-image: url('../img/header-black.min.svg'), url('../img/footer-black.min.svg');
-    background-position: center top, center bottom;
-    background-repeat: no-repeat;
+    background: url('../img/header-black.min.svg') no-repeat center top,
+                url('../img/footer-black.min.svg') no-repeat center bottom,
+                @white;
     background-size: 101%;
 
 
@@ -596,7 +592,7 @@
     }
 }
 
-@media(max-width:@screen_laptop) {
+@media (max-width: @screen_laptop) {
 
     .gallery {
         padding-top: 8%;
@@ -612,7 +608,7 @@
     }
 }
 
-@media(max-width:@screen_tablet) {
+@media (max-width: @screen_tablet) {
 
     .gallery {
         padding-top: 14%;
@@ -625,7 +621,7 @@
     }
 }
 
-@media(max-width:@screen_mobile) {
+@media (max-width: @screen_mobile) {
 
     .gallery {
 
@@ -641,18 +637,17 @@
 }
 
 .price-container {
-    .container ();
-    background-color: @white;
-    background-image: url('../img/header-black.min.svg'), url('../img/footer-black.min.svg');
-    background-position: center top, center bottom;
-    background-repeat: no-repeat;
+    .container();
+    background: url('../img/header-black.min.svg') no-repeat center top,
+                url('../img/footer-black.min.svg') no-repeat center bottom,
+                @white;
     background-size: 101%;
     padding-top: 160px;
     padding-bottom: 150px;
     position: relative;
 }
 
-@media(max-width:@screen_tablet) {
+@media (max-width: @screen_tablet) {
     .price-container {
        padding-left: 40px;
        padding-right: 40px;
@@ -660,21 +655,17 @@
     }
 }
 
-@media(max-width:@screen_mobile) {
+@media (max-width: @screen_mobile) {
     .price-container {
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 50px;
-        padding-bottom: 80px;
+        padding: 50px 10px 80px;
     }
 }
 
 .reviews {
-    .container ();
-    background-color: @white;
-    background-image: url('../img/header-black.min.svg'), url('../img/footer-black.min.svg');
-    background-position: center top, center bottom;
-    background-repeat: no-repeat, no-repeat;
+    .container();
+    background: url('../img/header-black.min.svg') no-repeat center top,
+                url('../img/footer-black.min.svg') no-repeat center bottom,
+                @white;
     background-size: 101%;
     padding-top: 170px;
     padding-bottom: 170px;
@@ -715,7 +706,7 @@
 
     &__photo {
         width: 140px;
-        height: 140;
+        height: 140px;
         border-radius: 50%;
     }
 
@@ -810,7 +801,7 @@
     }
 }
 
-@media(max-width:@screen_laptop) {
+@media (max-width: @screen_laptop) {
 
     .reviews {
         &__wrapper {
@@ -822,7 +813,7 @@
     }
 }
 
-@media(max-width:@screen_tablet) {
+@media (max-width: @screen_tablet) {
 
     .reviews {
         padding-top: 124px;
@@ -878,14 +869,12 @@
         }
 
         &__title {
-            margin: 0 auto;
-            margin-bottom: 10px;
+            margin: 0 auto 10px;
         }
     }
 }
 
 .reviews-item {
-    display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
@@ -899,7 +888,7 @@
     }
 }
 
-@media(max-width:@screen_tablet) {
+@media (max-width: @screen_tablet) {
     .reviews-item {
         flex-basis: 716px;
 
