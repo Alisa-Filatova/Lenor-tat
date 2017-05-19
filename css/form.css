@@ -1183,26 +1183,7 @@ body {
   .form__label {
     font-size: 18px;
   }
-  .form__label_hair-length,
-  .form__label_additional-services {
-    flex-flow: row wrap;
-  }
-  .form__hair-icon {
-    display: none;
-  }
   .form__legend {
     font-size: 22px;
-    font-weight: 600;
-    text-align: center;
-  }
-  .form__legend_add-info {
-    font-size: 21px;
-  }
-  .form__list-item {
-    margin-bottom: 15px;
-  }
-  .form__checkbox,
-  .form__radio-btn {
-    margin-right: 15px;
   }
 }
