@@ -13,10 +13,9 @@
 
 .services {
     .container();
-    background-color: @black_matte;
-    background-image: url('../img/header-black.min.svg'), url('../img/footer-scissors.min.svg');
-    background-position: center top, center 101%;
-    background-repeat: no-repeat;
+    background: url('../img/header-black.min.svg') no-repeat center top,
+                url('../img/footer-scissors.min.svg') no-repeat center 101%,
+                @black_matte;
     background-size: 101%;
     color: @white;
     padding-bottom: 140px;
@@ -252,7 +251,7 @@
     }
 }
 
-@media(max-width:@screen_tablet) {
+@media (max-width: @screen_tablet) {
 
     .service-item {
 
@@ -262,7 +261,7 @@
     }
 }
 
-@media(max-width:@screen_mobile) {
+@media (max-width: @screen_mobile) {
 
     .service-item {
         margin-bottom: 30px;
@@ -280,7 +279,7 @@
     }
 }
 
-@media(max-width: 320px) {
+@media (max-width: 320px) {
 
     .service-item {
         margin-bottom: 30px;
@@ -293,11 +292,10 @@
 
 .about-us {
     .container ();
-    background-color: @white;
-    background-image: url('../img/header-pink.min.svg'), url('../img/footer-black.min.svg');
-    background-position: center top, center bottom;
-    background-repeat: no-repeat;
-    background-size: 101%;
+    background: url('../img/header-pink.min.svg') no-repeat center top,
+                url('../img/footer-black.min.svg') no-repeat center bottom,
+                @white;
+    background-size: 102%;
     padding-top: 5%;
     padding-bottom: 7%;
     position: relative;
@@ -445,10 +443,10 @@
         &_tata {
             background-image: url('../img/tata-desktop.jpg');
 
-            @media(min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
-                  (min-width: 1280px) and (min-resolution: 192dpi),
-                  (min-width: 1280px) and (min-resolution: 1.5dppx) {
-                   background-image: url('../img/tata-retina.jpg');
+            @media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+                   (min-width: 1280px) and (min-resolution: 192dpi),
+                   (min-width: 1280px) and (min-resolution: 1.5dppx) {
+                    background-image: url('../img/tata-retina.jpg');
             }
         }
 
@@ -456,9 +454,9 @@
             background-image: url('../img/lenorman-desktop.jpg');
 
             @media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
-                  (min-width: 1280px) and (min-resolution: 192dpi),
-                  (min-width: 1280px) and (min-resolution: 1.5dppx) {
-                  background-image: url('../img/lenorman-retina.jpg');
+                   (min-width: 1280px) and (min-resolution: 192dpi),
+                   (min-width: 1280px) and (min-resolution: 1.5dppx) {
+                   background-image: url('../img/lenorman-retina.jpg');
             }
         }
     }
@@ -555,7 +553,7 @@
     background: url('../img/header-black.min.svg') no-repeat center top,
                 url('../img/footer-black.min.svg') no-repeat center bottom,
                 @white;
-    background-size: 101%;
+    background-size: 102%;
 
 
     &__wrapper {
@@ -572,8 +570,7 @@
         font-size: 41px;
         line-height: 45px;
         font-weight: 400;
-        margin: auto;
-        margin-bottom: 30px;
+        margin: auto auto 30px;
         padding: 5px;
     }
 
@@ -641,7 +638,7 @@
     background: url('../img/header-black.min.svg') no-repeat center top,
                 url('../img/footer-black.min.svg') no-repeat center bottom,
                 @white;
-    background-size: 101%;
+    background-size: 102%;
     padding-top: 160px;
     padding-bottom: 150px;
     position: relative;
@@ -666,7 +663,7 @@
     background: url('../img/header-black.min.svg') no-repeat center top,
                 url('../img/footer-black.min.svg') no-repeat center bottom,
                 @white;
-    background-size: 101%;
+    background-size: 102%;
     padding-top: 170px;
     padding-bottom: 170px;
     position: relative;
@@ -706,7 +703,7 @@
 
     &__photo {
         width: 140px;
-        height: 140px;
+        height: 100%;
         border-radius: 50%;
     }
 
@@ -836,7 +833,7 @@
     }
 }
 
-@media(max-width:@screen_mobile) {
+@media (max-width: @screen_mobile) {
     .reviews {
         padding-top: 55px;
         padding-bottom: 75px;

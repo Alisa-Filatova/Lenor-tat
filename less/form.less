@@ -11,16 +11,15 @@
 
 .appointment-form {
     .container();
-    background-color: @white;
-    background-image: url('../img/header-orange-rotate.min.svg'), url('../img/footer-black-rotate.min.svg');
-    background-position: center top, center bottom;
-    background-repeat: no-repeat;
+    background: url('../img/header-orange-rotate.min.svg') no-repeat center top,
+                url('../img/footer-black-rotate.min.svg') no-repeat center bottom,
+                @white;
     background-size: 101%;
     padding-top: 120px;
     padding-bottom: 253px;
 }
 
-@media(max-width:@screen_tablet) {
+@media (max-width: @screen_tablet) {
 
     .appointment-form {
         padding-top: 72px;
@@ -28,14 +27,14 @@
     }
 }
 
-@media(max-width: 625px) {
+@media (max-width: 625px) {
 
     .appointment-form {
         background-position: center top, center 100%;
     }
 }
 
-@media(max-width: 547px) {
+@media (max-width: 547px) {
 
     .appointment-form {
         padding-bottom: 65px;
@@ -54,8 +53,7 @@
         font-size: 35px;
         line-height: 45px;
         font-weight: 400;
-        margin: 0;
-        margin-bottom: 50px;
+        margin: 0 0 50px;
     }
 
     &__list {
@@ -152,15 +150,13 @@
             content: '';
             width: 235px;
             height: 130px;
-            background-image: url('../img/scissors-big.svg');
-            background-repeat: no-repeat;
-            background-position: center;
+            background: url('../img/scissors-big.svg') no-repeat center;
             background-size: 90%;
             position: absolute;
             right: 0%;
             bottom: -259%;
 
-            @media(max-width: 700px) {
+            @media (max-width: 700px) {
                 display: none;
             }
         }
@@ -223,7 +219,7 @@
     }
 }
 
-@media(max-width: 1040px) {
+@media (max-width: 1040px) {
     .form {
         max-width: 90%;
 
@@ -240,7 +236,7 @@
         &__input_name {
             width: 250px;
 
-            @media(max-width: 920px) {
+            @media (max-width: 920px) {
                 margin-right: 10px;
             }
 
@@ -248,7 +244,7 @@
     }
 }
 
-@media(max-width: 820px) {
+@media (max-width: 820px) {
     .form {
 
         &__list {
@@ -288,7 +284,7 @@
     }
 }
 
-@media(max-width: @screen_tablet) {
+@media (max-width: @screen_tablet) {
     .form {
 
         &__input {
@@ -303,7 +299,7 @@
     }
 }
 
-@media(max-width: 627px) {
+@media (max-width: 627px) {
 
     .form {
 
@@ -409,6 +405,41 @@
         }
     }
 }
+
+@media (max-width: 573px) {
+
+    .form {
+
+        &__list {
+
+            &_master,
+            &_service {
+                max-width: 228px;
+                margin: auto;
+            }
+
+            &_master {
+                max-width: 226px;
+                margin-top: 10px;
+            }
+
+            &_hair-length,
+            &_additional-services {
+                max-width: 231px;
+                margin: auto;
+            }
+        }
+
+        &__label {
+            font-size: 18px;
+
+        &__legend {
+            font-size: 22px;
+        }
+    }
+}
+
+
 
 
 

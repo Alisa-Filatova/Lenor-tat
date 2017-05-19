@@ -17,24 +17,23 @@
     z-index: 1500;
 }
 
-@media(max-width: 1070px) {
+@media (max-width: 1070px) {
 
     .page-header {
         padding: 0;
     }
 }
 
-@media(max-width:@screen_tablet) {
+@media (max-width: @screen_tablet) {
 
     .page-header {
         position: relative;
-        padding: 40px 0;
-        padding-bottom: 25px;
+        padding: 40px 0 25px;
         width: 100%;
     }
 }
 
-@media(max-width:@screen_mobile) {
+@media (max-width: @screen_mobile) {
 
     .page-header {
         padding: 30px 0;
@@ -80,7 +79,7 @@
     }
 }
 
-@media(max-width: 1147px) {
+@media (max-width: 1147px) {
 
     .main-nav {
         padding-left: 10px;
@@ -93,11 +92,11 @@
     }
 }
 
-@media(max-width:@screen_tablet) {
+@media (max-width: @screen_tablet) {
 
     .main-nav {
         position: absolute;
-        top: 70px;
+        top: 60px;
         padding: 0;
         width: 100%;
         display: none;
@@ -126,7 +125,7 @@
     }
 }
 
-@media(max-width:@screen_mobile) {
+@media (max-width: @screen_mobile) {
 
     .main-nav {
         &__link {
@@ -142,10 +141,9 @@
 
 .promo {
     .container ();
-    background-image: url('../img/footer-black.min.svg'), url('../img/slide-1.jpg');
-    background-position: center bottom, center top;
-    background-repeat: no-repeat;
-    background-size: 101%, cover;
+    background: url('../img/footer-black.min.svg') no-repeat center bottom,
+                url('../img/slide-1.jpg') no-repeat center top;
+    background-size: 102%, cover;
     position: relative;
 
     &__title {
@@ -171,8 +169,8 @@
     }
 
     &_inner {
-        background-image: url('../img/footer-orange-rotate.min.svg'), url('../img/slide-2.jpg');
-        background-position: center 101%, center top;
+        background: url('../img/footer-orange-rotate.min.svg') no-repeat center 101%,
+                    url('../img/slide-2.jpg') no-repeat center top;
         background-size: 101%, cover;
     }
 
@@ -213,7 +211,6 @@
         -moz-transition: background 0.2s linear;
         -o-transition: background 0.2s linear;
         transition: background 0.2s linear;
-        // http://stackoverflow.com/questions/7947385/hovering-over-css-transition-in-safari-lightens-certain-font-color
         -webkit-transform: translateZ(0);
 
         &:hover {
@@ -235,7 +232,7 @@
     }
 }
 
-@media(max-width:@screen_laptop) {
+@media (max-width: @screen_laptop) {
     .promo {
 
         &__wrapper {
@@ -251,10 +248,11 @@
     }
 }
 
-@media(max-width:@screen_tablet) {
+@media (max-width: @screen_tablet) {
 
     .promo {
-        background-image: url('../img/footer-black.min.svg'), url('../img/slide-1-tablet.jpg');
+        background-image: url('../img/footer-black.min.svg'),
+                          url('../img/slide-1-tablet.jpg');
 
         &__wrapper {
             padding: 76px 0;
@@ -274,13 +272,14 @@
         }
 
         &_inner {
+            background-image: url('../img/footer-orange-rotate.min.svg'),
+                              url('../img/slide-2-tablet.jpg');
             background-position: center bottom, right 58%;
-            background-image: url('../img/footer-orange-rotate.min.svg'), url('../img/slide-2-tablet.jpg');
         }
     }
 }
 
-@media(max-width:@screen_mobile) {
+@media (max-width: @screen_mobile) {
 
     .promo {
         background-image: none;
@@ -348,7 +347,7 @@
     }
 }
 
-@media(max-width:@screen_mobile) {
+@media (max-width: @screen_mobile) {
 
     .footer {
         padding-top: 27px;
@@ -440,11 +439,10 @@
     }
 }
 
-@media(max-width:@screen_tablet) {
+@media (max-width: @screen_tablet) {
 
     .footer-nav {
-        margin: 0 auto;
-        margin-top: 30px;
+        margin: 30px auto 0;
 
         &__items {
             display: flex;
@@ -457,7 +455,7 @@
     }
 }
 
-@media(max-width: 708px) {
+@media (max-width: 708px) {
     .footer-nav {
         display: none;
     }
@@ -466,8 +464,7 @@
 .copyright {
     text-align: left;
     font-size: 14px;
-    margin: 0;
-    margin-left: 14px;
+    margin: 0 0 0 14px;
 
     &__link {
         color: @bage;
@@ -475,7 +472,7 @@
     }
 }
 
-@media(max-width:@screen_mobile) {
+@media (max-width: @screen_mobile) {
 
     .contacts {
         &__wrapper {
