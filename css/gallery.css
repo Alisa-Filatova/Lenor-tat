@@ -359,8 +359,8 @@ button.gamma-btn-sspause:before {
     height: 40px;
     background-color: transparent;
     position: absolute;
-    right: 31px;
-    top: 29px;
+    right: 20px;
+    top: 19px;
     z-index: 1000;
     outline: none;
   }
@@ -391,8 +391,8 @@ button.gamma-btn-sspause:before {
 }
 @media (max-width: 425px) {
   .close-btn {
-    top: 18px;
-    right: 10px;
+    top: 12px;
+    right: 15px;
     width: 50px;
     height: 30px;
   }
@@ -420,7 +420,7 @@ button.gamma-btn-sspause:before {
     display: inline-block;
     position: absolute;
     top: 11px;
-    right: 28px;
+    right: 16px;
     background-color: #030303;
     width: 58px;
     height: 40px;
@@ -530,7 +530,7 @@ button.gamma-btn-sspause:before {
 @media (max-width: 768px) {
   .main-nav {
     position: absolute;
-    top: 70px;
+    top: 57px;
     padding: 0;
     width: 100%;
     display: none;
@@ -548,8 +548,8 @@ button.gamma-btn-sspause:before {
     line-height: 30px;
     font-weight: 500;
     background-color: #030303;
-    border-bottom: 2px solid #e88705;
-    border-top: 1px solid #ff9900;
+    border-top: 1px solid #333333;
+    color: #f2f2f2;
     animation: none;
   }
   .main-nav_open {

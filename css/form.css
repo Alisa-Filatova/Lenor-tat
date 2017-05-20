@@ -73,7 +73,6 @@ body {
 }
 .btn {
   text-decoration: none;
-  border: none;
   border: 3px solid #ff9900;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
@@ -82,22 +81,13 @@ body {
   color: #e88705;
   background-color: transparent;
   text-transform: uppercase;
-  padding: 5px 20px;
-  padding-top: 7px;
+  padding: 7px 20px 5px;
   line-height: 26px;
   cursor: pointer;
-  -webkit-transition-property: background;
-  -moz-transition-property: background;
-  -o-transition-property: background;
-  transition-property: background;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: linear;
-  -moz-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
+  -webkit-transition: background 0.2s linear;
+  -moz-transition: background 0.2s linear;
+  -o-transition: background 0.2s linear;
+  transition: background 0.2s linear;
 }
 .btn:hover {
   background-color: #ff9900;
@@ -110,11 +100,11 @@ body {
   color: #1e1e1e;
   text-decoration: none;
   font-size: 18px;
+  transition: color 0.3s linear;
 }
 .base-link:hover {
   color: #ff9900;
   text-decoration: underline;
-  transition: 0.3s;
 }
 .base-link:active {
   color: #f95d5d;
@@ -176,7 +166,7 @@ body {
   background-color: transparent;
   position: absolute;
   right: 31px;
-  top: 29px;
+  top: 23px;
   z-index: 1000;
   display: none;
   outline: none;
@@ -223,7 +213,7 @@ body {
 @media (max-width: 425px) {
   .close-btn {
     top: 18px;
-    right: 10px;
+    right: 17px;
     width: 50px;
     height: 30px;
   }

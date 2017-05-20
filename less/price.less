@@ -17,10 +17,8 @@
 
 .price-container {
     .container();
-    background-color: @black_matte;
-    background-image: url('../img/header-black.min.svg'), url('../img/footer-black.min.svg');
-    background-position: center top, center bottom;
-    background-repeat: no-repeat;
+    background: url('../img/header-black.min.svg') no-repeat center top,
+                url('../img/footer-black.min.svg') no-repeat center bottom, @black_matte;
     background-size: 101%;
     padding-top: 40px;
     padding-bottom: 65px;
@@ -42,10 +40,7 @@
     font-family: 'Arial Narrow', 'PT Sans Narrow', sans-serif;
 
     &__header {
-        padding-top: 27px;
-        padding-right: 38px;
-        padding-bottom: 26px;
-        padding-left: 38px;
+        padding: 27px 38px 26px;
         color: @black;
         background-color: @bage;
         font-size: 43px;
@@ -115,8 +110,7 @@
     &__value,
     &__field {
         width: 50%;
-        padding: 20px;
-        padding-bottom: 19px;
+        padding: 20px 20px 19px;
         vertical-align: top;
     }
 

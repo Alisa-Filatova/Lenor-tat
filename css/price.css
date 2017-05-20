@@ -75,11 +75,11 @@ body {
   color: #1e1e1e;
   text-decoration: none;
   font-size: 18px;
+  transition: color 0.3s linear;
 }
 .base-link:hover {
   color: #ff9900;
   text-decoration: underline;
-  transition: 0.3s;
 }
 .base-link:active {
   color: #f95d5d;
@@ -141,7 +141,7 @@ body {
   background-color: transparent;
   position: absolute;
   right: 31px;
-  top: 29px;
+  top: 23px;
   z-index: 1000;
   display: none;
   outline: none;
@@ -188,7 +188,7 @@ body {
 @media (max-width: 425px) {
   .close-btn {
     top: 18px;
-    right: 10px;
+    right: 17px;
     width: 50px;
     height: 30px;
   }
@@ -726,10 +726,7 @@ body {
 .price-container {
   max-width: 1440px;
   margin: 0 auto;
-  background-color: #1e1e1e;
-  background-image: url('../img/header-black.min.svg'), url('../img/footer-black.min.svg');
-  background-position: center top, center bottom;
-  background-repeat: no-repeat;
+  background: url('../img/header-black.min.svg') no-repeat center top, url('../img/footer-black.min.svg') no-repeat center bottom, #1e1e1e;
   background-size: 101%;
   padding-top: 40px;
   padding-bottom: 65px;
@@ -765,10 +762,7 @@ body {
   font-family: 'Arial Narrow', 'PT Sans Narrow', sans-serif;
 }
 .price__header {
-  padding-top: 27px;
-  padding-right: 38px;
-  padding-bottom: 26px;
-  padding-left: 38px;
+  padding: 27px 38px 26px;
   color: #000000;
   background-color: #f8f5f2;
   font-size: 43px;
@@ -826,8 +820,7 @@ body {
 .price__value,
 .price__field {
   width: 50%;
-  padding: 20px;
-  padding-bottom: 19px;
+  padding: 20px 20px 19px;
   vertical-align: top;
 }
 .price__value {
