@@ -402,9 +402,9 @@ body {
     line-height: 30px;
     font-weight: 500;
     background-color: #030303;
-    border-bottom: 2px solid #e88705;
-    border-top: 1px solid #ff9900;
+    border-top: 1px solid #222222;
     animation: none;
+    color: #f2f2f2;
   }
   .main-nav_open {
     display: block;
