@@ -90,7 +90,7 @@ $reviews.find('.reviews__slider_right').on('click', function(event) {
 
     $reviewsItems
         .siblings()
-        .removeClass(reviewItemClassVisible)
+        .removeClass(reviewItemClassVisible);
 
     $reviewPaginatorItems
         .siblings()
