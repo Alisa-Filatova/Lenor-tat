@@ -1,0 +1,20 @@
+{
+  "name": "lenortat.spb.ru",
+  "version": "1.0.0",
+  "description": "Сайт Имидж-студии Таты Куриной и Татьяны Ленорман.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "rm -f dist.tar.gz && cd .. && tar -zkcf dist.tar.gz --exclude='.git' lenortat.spb.ru && mv dist.tar.gz lenortat.spb.ru && scp -i ~/.ssh/aws.pem lenortat.spb.ru/dist.tar.gz aws:~ && ssh -i ~/.ssh/aws.pem aws sudo ./deploy/lenortat.spb.ru.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alisa-Filatova/Lenor-tat.git"
+  },
+  "author": "Alisa Filatova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alisa-Filatova/Lenor-tat/issues"
+  },
+  "homepage": "https://github.com/Alisa-Filatova/Lenor-tat#readme"
+}
