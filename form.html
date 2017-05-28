@@ -63,7 +63,7 @@
     </section>
     
     <section class="appointment-form">
-        <form class="form" method="post" action="" name="appointment-form">
+        <form class="form" name="appointment-form">
             
             <fieldset class="form__fieldset form__fieldset_name">
                 <h1 class="form__title">Запись к мастеру</h1>
@@ -443,6 +443,17 @@
                 </p>
             </div>
         </form>
+        <div class="alert alert_success">
+            <div class="alert__container alert__container_header">
+                <i class="alert__icon alert__icon_success"></i>
+            </div>
+            <div class="alert__container alert__container_content">
+                <h3 class="alert__title">Отправлено!</h3>
+                <p class="alert__message">Мы свяжемся с вами в ближайшее время.</p>
+                <button type="button" class="btn alert__btn alert__btn_success">Закрыть</button>
+            </div>
+        </div>
+        <div class="modal-overlay"></div>
     </section>
 
     <footer class="footer" id="contacts">
@@ -496,8 +507,10 @@
             </nav>
         </div>
     </footer>
-    
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/main-nav.js"></script>
+    <script src="js/form.js"></script>
 
 </body>
 </html>
