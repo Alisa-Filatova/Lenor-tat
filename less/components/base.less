@@ -371,43 +371,47 @@
     height: 70px;
     border-radius: 50%;
     cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 
     &_vk {
-        background-image: url('../img/vk-icon.min.svg');
+        background: url('../img/vk-icon.min.svg') no-repeat center,
+                    url('../img/vk-icon-orange.min.svg') no-repeat center,
+                    url('../img/vk-icon-pink.min.svg') no-repeat center;
+        transition: all 0.1s linear;
 
         &:hover {
-            background-image: url('../img/vk-icon-orange.min.svg');
+            background: url('../img/vk-icon-orange.min.svg') no-repeat center;
         }
 
         &:active {
-            background-image: url('../img/vk-icon-pink.min.svg');
+            background: url('../img/vk-icon-pink.min.svg') no-repeat center;
         }
     }
 
     &_mail {
-        background-image: url('../img/mail-icon.svg');
-
+        background: url('../img/mail-icon.svg') no-repeat center,
+                    url('../img/mail-icon-orange.min.svg') no-repeat center,
+                    url('../img/mail-icon-pink.min.svg') no-repeat center;
         &:hover {
-            background-image: url('../img/mail-icon-orange.min.svg');
+            background: url('../img/mail-icon-orange.min.svg') no-repeat center;
         }
 
         &:active {
-            background-image: url('../img/mail-icon-pink.min.svg');
+            background: url('../img/mail-icon-pink.min.svg') no-repeat center;
         }
     }
 
     &_phone {
-        background-image: url('../img/phone-icon.min.svg');
+        background: url('../img/phone-icon.min.svg') no-repeat center,
+                    url('../img/phone-icon-orange.min.svg') no-repeat center,
+                    url('../img/phone-icon-pink.min.svg') no-repeat center;
+        transition: all 0.1s linear;
 
         &:hover {
-            background-image: url('../img/phone-icon-orange.min.svg');
+            background: url('../img/phone-icon-orange.min.svg') no-repeat center;
         }
 
         &:active {
-            background-image: url('../img/phone-icon-pink.min.svg');
+            background: url('../img/phone-icon-pink.min.svg') no-repeat center;
         }
     }
 }
