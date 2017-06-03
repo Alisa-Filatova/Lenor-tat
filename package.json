@@ -1,5 +1,6 @@
 {
   "name": "lenortat.spb.ru",
+  "private": true,
   "version": "1.0.0",
   "description": "Сайт Имидж-студии Таты Куриной и Татьяны Ленорман.",
   "main": "index.js",
