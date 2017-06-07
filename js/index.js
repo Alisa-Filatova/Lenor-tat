@@ -28,6 +28,10 @@ $('.promo__paginator-item').on('click', function() {
     scrollToAnchor.apply(this, arguments);
 });
 
+$('.main-nav__link_index').on('click', function() {
+    scrollToAnchor.apply(this, arguments);
+});
+
 var $reviews = $('#reviews');
 var $reviewsItems = $reviews.find('.reviews-item');
 var $reviewPaginatorItems = $reviews.find('.reviews__paginator-item');
