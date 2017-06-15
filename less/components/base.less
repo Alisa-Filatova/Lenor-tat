@@ -381,48 +381,23 @@
     height: 70px;
     border-radius: 50%;
     cursor: pointer;
+    transition: all 0.2s linear;
 
-    &_vk {
-        background: url('../img/vk-icon.min.svg') no-repeat center,
-                    url('../img/vk-icon-orange.min.svg') no-repeat center,
-                    url('../img/vk-icon-pink.min.svg') no-repeat center;
-        transition: all 0.1s linear;
-
-        &:hover {
-            background: url('../img/vk-icon-orange.min.svg') no-repeat center;
-        }
-
-        &:active {
-            background: url('../img/vk-icon-pink.min.svg') no-repeat center;
-        }
+    & svg .background {
+        fill: #fff;
     }
 
-    &_mail {
-        background: url('../img/mail-icon.svg') no-repeat center,
-                    url('../img/mail-icon-orange.min.svg') no-repeat center,
-                    url('../img/mail-icon-pink.min.svg') no-repeat center;
-        &:hover {
-            background: url('../img/mail-icon-orange.min.svg') no-repeat center;
-        }
-
-        &:active {
-            background: url('../img/mail-icon-pink.min.svg') no-repeat center;
-        }
+    & svg:hover .background {
+        fill: @orange;
     }
 
-    &_phone {
-        background: url('../img/phone-icon.min.svg') no-repeat center,
-                    url('../img/phone-icon-orange.min.svg') no-repeat center,
-                    url('../img/phone-icon-pink.min.svg') no-repeat center;
-        transition: all 0.1s linear;
+    & svg:active .background {
+        fill: @pink;
+    }
 
-        &:hover {
-            background: url('../img/phone-icon-orange.min.svg') no-repeat center;
-        }
-
-        &:active {
-            background: url('../img/phone-icon-pink.min.svg') no-repeat center;
-        }
+    & circle {
+        stroke:#FFF;
+        stroke-miterlimit:10
     }
 }
 
@@ -495,7 +470,6 @@
         }
     }
 }
-
 
 
 

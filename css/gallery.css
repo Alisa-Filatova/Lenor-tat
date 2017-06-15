@@ -305,7 +305,7 @@ button.gamma-btn-sspause:before {
 }
 /* Loaders */
 .gamma-loading {
-  background: transparent url('../img/loader_light.gif') no-repeat center center;
+  background: transparent url('../img/loader_dark.gif') no-repeat center center;
 }
 .gamma-single-view.gamma-loading {
   background: transparent url('../img/loader_dark.gif') no-repeat center center;
@@ -626,35 +626,20 @@ button.gamma-btn-sspause:before {
   height: 70px;
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.2s linear;
 }
-.contacts-btn_vk {
-  background: url('../img/vk-icon.min.svg') no-repeat center, url('../img/vk-icon-orange.min.svg') no-repeat center, url('../img/vk-icon-pink.min.svg') no-repeat center;
-  transition: all 0.1s linear;
+.contacts-btn svg .background {
+  fill: #fff;
 }
-.contacts-btn_vk:hover {
-  background: url('../img/vk-icon-orange.min.svg') no-repeat center;
+.contacts-btn svg:hover .background {
+  fill: #ff9900;
 }
-.contacts-btn_vk:active {
-  background: url('../img/vk-icon-pink.min.svg') no-repeat center;
+.contacts-btn svg:active .background {
+  fill: #f95d5d;
 }
-.contacts-btn_mail {
-  background: url('../img/mail-icon.svg') no-repeat center, url('../img/mail-icon-orange.min.svg') no-repeat center, url('../img/mail-icon-pink.min.svg') no-repeat center;
-}
-.contacts-btn_mail:hover {
-  background: url('../img/mail-icon-orange.min.svg') no-repeat center;
-}
-.contacts-btn_mail:active {
-  background: url('../img/mail-icon-pink.min.svg') no-repeat center;
-}
-.contacts-btn_phone {
-  background: url('../img/phone-icon.min.svg') no-repeat center, url('../img/phone-icon-orange.min.svg') no-repeat center, url('../img/phone-icon-pink.min.svg') no-repeat center;
-  transition: all 0.1s linear;
-}
-.contacts-btn_phone:hover {
-  background: url('../img/phone-icon-orange.min.svg') no-repeat center;
-}
-.contacts-btn_phone:active {
-  background: url('../img/phone-icon-pink.min.svg') no-repeat center;
+.contacts-btn circle {
+  stroke: #FFF;
+  stroke-miterlimit: 10;
 }
 .footer-nav {
   display: flex;
