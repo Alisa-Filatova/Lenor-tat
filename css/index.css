@@ -1143,7 +1143,7 @@ body {
     margin-right: 0;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 398px) {
   .services__wrapper {
     padding: 0 7px;
   }
@@ -1214,11 +1214,8 @@ body {
   .service-item {
     margin-bottom: 30px;
   }
-  .service-item__icon_comb {
-    right: 27px;
-  }
-  .service-item__icon_brush {
-    right: -28px;
+  .service-item__text {
+    font-size: 16px;
   }
 }
 @media (max-width: 320px) {
@@ -1706,6 +1703,9 @@ body {
   .reviews__wrapper_top {
     max-width: 67%;
   }
+  .reviews__text {
+    margin-left: 15px;
+  }
 }
 @media (max-width: 768px) {
   .reviews {
@@ -1736,6 +1736,7 @@ body {
   .reviews__text {
     text-align: center;
     flex-basis: 320px;
+    margin: 0;
   }
   .reviews__wrapper_top {
     max-width: 100%;
