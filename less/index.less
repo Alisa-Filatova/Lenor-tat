@@ -589,15 +589,20 @@
     }
 }
 
+@media (max-width: 1120px) {
+
+    .gallery {
+        &__wrapper {
+            max-width: 768px;
+        }
+    }
+}
+
 @media (max-width: @screen_laptop) {
 
     .gallery {
         padding-top: 8%;
         padding-bottom: 8%;
-
-        &__wrapper {
-            max-width: 768px;
-        }
 
         &__slider-btn {
             top: 98.5%;

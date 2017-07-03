@@ -1496,13 +1496,15 @@ body {
   box-shadow: 6px 3px 20px -6px #4e4e4e;
   margin-top: 30px;
 }
+@media (max-width: 1120px) {
+  .gallery__wrapper {
+    max-width: 768px;
+  }
+}
 @media (max-width: 1024px) {
   .gallery {
     padding-top: 8%;
     padding-bottom: 8%;
-  }
-  .gallery__wrapper {
-    max-width: 768px;
   }
   .gallery__slider-btn {
     top: 98.5%;
