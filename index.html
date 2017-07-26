@@ -59,7 +59,7 @@
 
     </header>
 
-    <section class="promo" id="promo">
+    <section class="promo scroll-spy" id="promo">
         <div class="promo__wrapper">
             <img 
                 class="logo promo__logo" 
@@ -72,19 +72,53 @@
             </h1>
         </div>
         <div class="paginator promo__paginator">
-            <a href="#promo" class="paginator__item promo__paginator-item promo__paginator-item_active" title="Главная"></a>
-            <a href="#hair" class="paginator__item promo__paginator-item" title="Имидж-студия"></a>
-            <a href="#atelier" class="paginator__item promo__paginator-item" title="Ателье"></a>
-            <a href="#about-us" class="paginator__item promo__paginator-item" title="О нас"></a>
-            <a href="#price-list" class="paginator__item promo__paginator-item" title="Цены"></a>
-            <a href="#reviews" class="paginator__item promo__paginator-item" title="Отзывы"></a>
-            <a href="#contacts" class="paginator__item promo__paginator-item" title="Контакты"></a>
+            <a
+                href="#promo"
+                class="paginator__item promo__paginator-item promo__paginator-item_active"
+                title="Главная"
+                data-id="promo"
+            >
+            </a>
+            <a
+                href="#atelier"
+                class="paginator__item promo__paginator-item"
+                title="Ателье"
+                data-id="atelier"
+            >
+            </a>
+            <a
+                href="#about-us"
+                class="paginator__item promo__paginator-item"
+                title="О нас"
+                data-id="about-us"
+            >
+            <a
+                href="#gallery"
+                class="paginator__item promo__paginator-item"
+                title="Работы"
+                data-id="gallery"
+            >
+            </a>
+            <a
+                href="#price-list"
+                class="paginator__item promo__paginator-item"
+                title="Цены"
+                data-id="price-list"
+            >
+            </a>
+            <a
+                href="#reviews"
+                class="paginator__item promo__paginator-item"
+                title="Отзывы"
+                data-id="reviews"
+            >
+            </a>
         </div>
         <a class="slider-btn promo__slider-btn" href="#hair"></a>
     </section>
     
     <main class="main-page">
-        <section class="services services_hair" id="hair">
+        <section class="services services_hair scroll-spy" id="hair">
 
             <h2 class="services__title">Имидж-студия</h2>
             <div class="services__wrapper">
@@ -144,7 +178,7 @@
             <a class="slider-btn services__slider-btn services__slider-btn_hair" href="#atelier"></a>
         </section>
 
-        <section class="services services_atelier" id="atelier">
+        <section class="services services_atelier scroll-spy" id="atelier">
             <h2 class="services__title">Ателье</h2>
             <div class="services__wrapper">
                 <div class="service-item">
@@ -201,7 +235,7 @@
             <a class="slider-btn services__slider-btn services__slider-btn_atelier" href="#about-us"></a>
         </section>
 
-        <section class="about-us" id="about-us">
+        <section class="about-us scroll-spy" id="about-us">
             <h2 class="about-us__title">О нас</h2>
             <div class="about-us__wrapper">
                 <div class="about-us-item about-us-item_tata">
@@ -273,7 +307,7 @@
             <a class="slider-btn about-us__slider-btn" href="#gallery"></a>
         </section>
 
-        <section class="gallery" id="gallery">
+        <section class="gallery scroll-spy" id="gallery">
             <h2 class="gallery__title">Наши работы</h2>
             <div class="gallery__wrapper">
                 <img class="gallery__item" src="img/photo-gallery-1.jpg" alt="photo1">
@@ -288,7 +322,7 @@
         </section>
      
         <div class="price-container">
-            <section class="price" id="price-list">
+            <section class="price">
                 <header class="price__header">
                     <h3 class="price__slogan">
                         Базовые услуги парикмахера-стилиста
@@ -303,7 +337,7 @@
 
                 </header>
 
-                <table class="price__items">
+                <table class="price__items scroll-spy" id="price-list">
                     <tr>
                         <td class="price__value">Женская стрижка</td>
                         <td class="price__field">от 1 500 
@@ -360,7 +394,7 @@
             <a class="btn price__btn" href="price.html#">Смотреть все услуги</a>
         </div>
 
-        <section class="reviews" id="reviews">
+        <section class="reviews scroll-spy" id="reviews">
             
             <a class="slider-btn reviews__slider-btn" href="#reviews"></a>
             
@@ -465,6 +499,7 @@
             <a
                 class="btn reviews__btn_bottom"
                 href="https://vk.com/lenortat"
+                target="_blank"
             >
                 Оставить отзыв
             </a>
@@ -472,7 +507,7 @@
         </section>
     </main>
 
-    <footer class="footer" id="contacts">
+    <footer class="footer scroll-spy" id="contacts">
         <div class="footer__wrapper">
             <div class="footer__addrees">
                 <a href="index.html" class="logo footer__logo">
@@ -606,6 +641,7 @@
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="js/main-nav.js"></script>
+    <script src="js/scrollspy.js"></script>
     <script src="js/index.js?0"></script>
 
     <!-- Yandex.Metrika counter -->

@@ -16,7 +16,9 @@ function scrollToAnchor(event) {
 
 $('.slider-btn').on('click', scrollToAnchor);
 
-$('.promo__paginator-item').on('click', function() {
+var $paginatorItem = $('.promo__paginator-item');
+
+$paginatorItem.on('click', function() {
     var classActive = 'promo__paginator-item_active';
 
     $(this)
@@ -118,3 +120,15 @@ $reviews.find('.reviews__slider_right').on('click', function(event) {
             .addClass(reviewPaginatorClassActive);
     }
 });
+
+var $section = $('.scroll-spy');
+
+$section.on('scrollSpy:enter', function() {
+    var sectionId = $(this).attr('id');
+    $paginatorItem.filter('[data-id="' + sectionId + '"]')
+        .addClass('promo__paginator-item_active')
+        .siblings()
+        .removeClass('promo__paginator-item_active');
+});
+
+$section.scrollSpy();
