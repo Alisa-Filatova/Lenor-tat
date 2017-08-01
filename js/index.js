@@ -16,6 +16,24 @@ function scrollToAnchor(event) {
 
 $('.slider-btn').on('click', scrollToAnchor);
 
+var $section = $('.scroll-spy');
+
+$section.on('scrollSpy:enter', function(event) {
+    event.preventDefault();
+    var $paginatorItem = $('.promo__paginator-item');
+
+    var sectionId = $(this).attr('id');
+
+    $paginatorItem.filter('[data-id="' + sectionId + '"]')
+
+        .siblings()
+        .removeClass('promo__paginator-item_active')
+        .end()
+        .addClass('promo__paginator-item_active');
+});
+
+$section.scrollSpy();
+
 var $paginatorItem = $('.promo__paginator-item');
 
 $paginatorItem.on('click', function() {
@@ -39,6 +57,7 @@ var $reviewsItems = $reviews.find('.reviews-item');
 var $reviewPaginatorItems = $reviews.find('.reviews__paginator-item');
 var reviewItemClassVisible = 'reviews-item_visible';
 var reviewPaginatorClassActive = 'reviews__paginator-item_active';
+
 
 $reviewPaginatorItems.on('click', function() {
     var $this = $(this);
@@ -121,14 +140,5 @@ $reviews.find('.reviews__slider_right').on('click', function(event) {
     }
 });
 
-var $section = $('.scroll-spy');
 
-$section.on('scrollSpy:enter', function() {
-    var sectionId = $(this).attr('id');
-    $paginatorItem.filter('[data-id="' + sectionId + '"]')
-        .addClass('promo__paginator-item_active')
-        .siblings()
-        .removeClass('promo__paginator-item_active');
-});
 
-$section.scrollSpy();
