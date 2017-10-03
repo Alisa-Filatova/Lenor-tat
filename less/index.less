@@ -29,10 +29,8 @@
 
     &__wrapper {
         .wrapper();
+        .flex-wrapper(row, space-between, wrap);
         padding: 0 40px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
         align-items: baseline;
     }
 
@@ -73,7 +71,7 @@
 
         &:active {
             background-color: @orange_dark;
-            color: rgba(255, 255, 255, 0.5);
+            color: fade(@white, 50%);
         }
 
         &_atelier {
@@ -87,7 +85,7 @@
 
             &:active {
                background-color: @pink_dark;
-               color: rgba(255, 255, 255, 0.5);
+               color: fade(@white, 50%);
             }
         }
     }
@@ -258,7 +256,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: @screen_mobile_small) {
 
     .service-item {
         margin-bottom: 30px;
@@ -270,7 +268,7 @@
 }
 
 .about-us {
-    .container ();
+    .container();
     background: url('../img/header-pink.min.svg') no-repeat center top,
                 url('../img/footer-black.min.svg') no-repeat center bottom,
                 @white;
@@ -289,17 +287,13 @@
 
     &__wrapper {
         .wrapper();
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-between;
+        .flex-wrapper(column, space-between, wrap);
         align-items: center;
     }
 
     &__btn-wrapper {
-        display: flex;
-        flex-flow: column nowrap;
+        .flex-wrapper(column, space-between, nowrap);
         align-items: flex-end;
-        justify-content: space-between;
         max-height: 95px;
     }
 
@@ -390,9 +384,7 @@
 }
 
 .about-us-item {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    .flex-wrapper(row, space-around, wrap);
     text-align: left;
     width: 90%;
 
@@ -525,7 +517,7 @@
 }
 
 .gallery {
-    .container ();
+    .container();
     position: relative;
     padding-top: 120px;
     padding-bottom: 130px;
@@ -537,10 +529,8 @@
 
     &__wrapper {
         .wrapper();
-        display: flex;
-        flex-flow: row wrap;
+        .flex-wrapper(row, space-around, wrap);
         align-items: flex-start;
-        justify-content: space-around;
     }
 
     &__title {
@@ -677,9 +667,7 @@
 
     &__wrapper {
         .wrapper();
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
+        .flex-wrapper(row, center, nowrap);
         align-items: center;
         margin-top: 30px;
 

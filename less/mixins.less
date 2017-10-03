@@ -37,3 +37,25 @@
     }
 
 }
+
+.flex-wrapper(@direction, @justyfy-content, @wrap) {
+    display: flex;
+    flex-flow: @direction @wrap;
+    justify-content: @justyfy-content;
+}
+
+.transition(@property, @time, @type) {
+    -webkit-transition: @property  @time  @type;
+    -moz-transition: @property  @time  @type;
+    -o-transition: @property  @time  @type;
+    transition: @property  @time  @type;
+}
+
+.alignment(@position, @width) {
+    position: @position;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    width: @width;
+    margin-left: -(@width / 2);
+}

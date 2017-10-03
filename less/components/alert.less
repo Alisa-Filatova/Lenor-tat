@@ -2,14 +2,9 @@
 @import 'overlay';
 
 .alert {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 50%;
-    width: 500px;
-    margin-left: -(500px / 2);
+    .alignment(fixed, @alert-width);
     overflow: hidden;
-    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 5px 50px fade(@black, 70%);
     z-index: 2100;
     text-align: center;
     display: none;
@@ -23,7 +18,7 @@
     }
 
     &__container_content {
-        background-color: #fff;
+        background-color: @white;;
         padding-bottom: 20px;
     }
 

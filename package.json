@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Alisa-Filatova/Lenor-tat/issues"
   },
-  "homepage": "https://github.com/Alisa-Filatova/Lenor-tat#readme"
+  "homepage": "https://github.com/Alisa-Filatova/Lenor-tat#readme",
+  "dependencies": {
+    "webpack": "^3.5.6"
+  }
 }

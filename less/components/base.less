@@ -12,7 +12,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 40px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: fade(@black, 60%);
     position: absolute;
     z-index: 1500;
 }
@@ -45,9 +45,7 @@
 
     &__items {
         list-style: none;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
+        .flex-wrapper(row, space-around, wrap);
         align-items: center;
         margin: 0;
         padding: 0;
@@ -62,11 +60,8 @@
         padding: 24px;
         border-bottom: 2px solid transparent;
         animation: fade-in 2s ease;
-        transition: border 0.5s ease-in;
-        -webkit-transition: border 0.5s ease-in;
-        -moz-transition: border 0.5s ease-in;
-        -ms-transition: border 0.5s ease-in;
-        -o-transition: border 0.5s ease-in;
+        .transition(border, 0.5s, ease-in);
+    
 
         &:hover {
             color: @orange;
@@ -145,7 +140,7 @@
 }
 
 .promo {
-    .container ();
+    .container();
     background: url('../img/footer-black.min.svg') no-repeat center bottom,
                 url('../img/slide-1.jpg') no-repeat center top;
     background-size: 102%, cover;
@@ -212,11 +207,8 @@
     &__paginator-item {
         margin-bottom: 12px;
         outline: none;
-        -webkit-transition: background 0.2s linear;
-        -moz-transition: background 0.2s linear;
-        -o-transition: background 0.2s linear;
-        transition: background 0.2s linear;
-        -webkit-transform: translateZ(0);
+        .transition(background, 0.2s, linear);
+        -webkit-transform: translateZ(0); //* for Safari bug
 
         &:hover {
             background-color: @pink;
@@ -315,21 +307,19 @@
         }
 
         &_inner {
-           background-image: url('../img/footer-orange-rotate.min.svg'), none;
+            background-image: url('../img/footer-orange-rotate.min.svg'), none;
         }
     }
 }
 
 .footer {
-    .container ();
+    .container();
     color: @white;
     padding-top: 40px;
     padding-bottom: 40px;
 
     &__wrapper {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
+        .flex-wrapper(row, space-around, wrap);
         align-items: center;
     }
 
@@ -376,7 +366,7 @@
     transition: all 0.2s linear;
 
     & svg .background {
-        fill: #fff;
+        fill: @white;
     }
 
     & svg:hover .background {
@@ -462,11 +452,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-

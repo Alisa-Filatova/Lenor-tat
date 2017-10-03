@@ -44,9 +44,7 @@
 }
 
 .form {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    .flex-wrapper(row, space-around, wrap);
     text-align: left;
     max-width: 1100px;
     margin: 0 auto;
@@ -61,9 +59,7 @@
     &__list {
         list-style: none;
         padding: 0;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
+        .flex-wrapper(row, space-between, nowrap);
         width: 1020px;
 
         &_contacts,
@@ -124,9 +120,9 @@
 
         &_hair-length,
         &_additional-services {
-           display: flex;
-           flex-flow: column wrap;
-           align-items: center;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
         }
     }
 

@@ -1,4 +1,5 @@
 @import '../../variables';
+@import '../../mixins';
 
 .btn {
     text-decoration: none;
@@ -13,10 +14,7 @@
     padding: 7px 20px 5px;
     line-height: 26px;
     cursor: pointer;
-    -webkit-transition: background 0.2s linear;
-    -moz-transition: background 0.2s linear;
-    -o-transition: background 0.2s linear;
-    transition: background 0.2s linear;
+    .transition(background, 0.2s, linear);
 
     &:hover {
         background-color: @orange;

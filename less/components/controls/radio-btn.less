@@ -12,10 +12,10 @@
         display: inline-block;
         vertical-align: middle;
         cursor: pointer;
+        transition: all 0.3s linear;
 
         &:hover {
             border: 2px solid @orange;
-            transition: 0.3s;
         }
 
         &:active {
@@ -24,12 +24,12 @@
     }
 
     &:checked + label span::after {
+        content: '';
         position: absolute;
         top: 9px;
         left: 9px;
         width: 18px;
         height: 18px;
-        content: '';
         background: @orange;
         border-radius: 50%;
     }
