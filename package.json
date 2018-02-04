@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "ssh -i ~/.ssh/aws.pem aws sudo ./deploy.sh lenortat.spb.ru"
+    "deploy": "ssh vds ./deploy.sh lenortat.spb.ru"
   },
   "repository": {
     "type": "git",
