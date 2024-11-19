@@ -386,7 +386,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   background: url('../img/footer-black.min.svg') no-repeat center bottom, url('../img/slide-1.jpg') no-repeat center top;
-  background-size: 102%, cover;
+  background-size: 101%, cover;
   position: relative;
 }
 @media (max-width: 768px) {
@@ -1261,7 +1261,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   background: url('../img/header-pink.min.svg') no-repeat center top, url('../img/footer-black.min.svg') no-repeat center bottom, #ffffff;
-  background-size: 103%;
+  background-size: 101%;
   padding-top: 5%;
   padding-bottom: 7%;
   position: relative;
@@ -1478,7 +1478,7 @@ body {
   padding-top: 120px;
   padding-bottom: 130px;
   background: url('../img/header-black.min.svg') no-repeat center top, url('../img/footer-black.min.svg') no-repeat center bottom, #ffffff;
-  background-size: 102%;
+  background-size: 101%;
 }
 @media (max-width: 768px) {
   .gallery {
@@ -1561,7 +1561,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   background: url('../img/header-black.min.svg') no-repeat center top, url('../img/footer-black.min.svg') no-repeat center bottom, #ffffff;
-  background-size: 102%;
+  background-size: 101%;
   padding-top: 160px;
   padding-bottom: 150px;
   position: relative;
@@ -1598,7 +1598,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   background: url('../img/header-black.min.svg') no-repeat center top, url('../img/footer-black.min.svg') no-repeat center bottom, #ffffff;
-  background-size: 102%;
+  background-size: 101%;
   padding-top: 170px;
   padding-bottom: 170px;
   position: relative;
