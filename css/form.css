@@ -495,7 +495,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   background: url('../img/footer-black.min.svg') no-repeat center bottom, url('../img/slide-1.jpg') no-repeat center top;
-  background-size: 101%, cover;
+  background-size: 102%, cover;
   position: relative;
 }
 @media (max-width: 768px) {
